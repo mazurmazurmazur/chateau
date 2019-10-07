@@ -1,0 +1,33 @@
+#mainTextHeader {
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+  font-size: 30px;
+}
+
+#mainPageDesc p {
+  text-align: justify;
+  width: 60vw;
+  margin: auto;
+  line-height: 4vh;
+  font-size: 2vh;
+  margin-bottom: 2em;
+}
+
+#mainPageDesc p:first-of-type {
+  border-top: 1px solid rgba(128, 128, 128, 0.603);
+  padding-top: 2vh;
+}
+
+#mainPageDesc {
+  margin-bottom: 10vh;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  #home-bg {
+    /* The file size of this background image is 93% smaller
+       * to improve page load speed on mobile internet connections */
+    background-image: url(/images/homebg.jpg);
+  }
+}
