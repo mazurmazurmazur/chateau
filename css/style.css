@@ -272,7 +272,7 @@ body.nav-active .nav__list-item:nth-child(5) {
   text-align: center;
 }
 
-#ENG {
+.startL {
   font-weight: 900;
 }
 
@@ -291,6 +291,11 @@ body.nav-active .nav__list-item:nth-child(5) {
 .langChoice {
   margin: 1vw;
   cursor: pointer;
+}
+
+.langChoice a {
+  text-decoration: none;
+  color: black;
 }
 
 .nav__list {

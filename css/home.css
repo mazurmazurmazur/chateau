@@ -23,6 +23,17 @@
   margin-bottom: 10vh;
 }
 
+.readMore {
+  text-decoration: none;
+  color: rgb(167, 164, 164);
+  position: absolute;
+  right: 20vw;
+}
+
+.readMore:hover {
+  color: black;
+}
+
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
   #home-bg {
