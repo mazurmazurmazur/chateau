@@ -66,6 +66,7 @@ p {
   top: 0;
   left: 0;
   z-index: 19;
+  transition: top 1s ease;
 }
 .nav_ {
   position: fixed;
@@ -282,6 +283,7 @@ body.nav-active .nav__list-item:nth-child(5) {
   white-space: nowrap;
   left: 50%;
   transform: translate(-50%, 0%);
+  transition: 1s ease;
 }
 
 .dropdown:hover .dropdown-content-wrapper {

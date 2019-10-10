@@ -43,8 +43,22 @@ var app = (function() {
 
 //END BURGER MENU
 
+//LANGUAGE
+
 $('.langChoice').on('click', function() {
   $('.langChoice').css('font-weight', 500);
   $(this).css('font-weight', 900);
   $('#langSelected').html($(this).html());
 });
+
+let eng = document.getElementById('ENG');
+let man = document.getElementById('MAN');
+
+eng.addEventListener('click', function() {
+  location.href = '../en/';
+});
+man.addEventListener('click', function() {
+  location.href = '../cn/';
+});
+
+//END LANGUAGE
