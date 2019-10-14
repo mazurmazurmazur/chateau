@@ -34,6 +34,11 @@
   color: black;
 }
 
+video {
+  background: transparent url('../images/videoposter.jpg') 50% 50% / cover
+    no-repeat;
+}
+
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
   #home-bg {

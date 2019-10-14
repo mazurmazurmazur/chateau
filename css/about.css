@@ -1,6 +1,6 @@
 #about-bg {
   /* Location of the image */
-  background-image: url(/images/aboutbg.jpg);
+  background-image: url(aboutbg.jpg);
 
   /* Image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -53,16 +53,17 @@
 }
 
 #about-content {
-  margin-top: 10vh;
+  margin-top: 20vh;
   display: grid;
-  grid-row-gap: 50px;
+  grid-row-gap: 100px;
   grid-template-columns: 50vw auto;
   margin-right: 7vw;
 }
 
 .grid-item {
   text-align: justify;
-  padding: 10%;
+  padding: 5%;
+  position: relative;
 }
 
 .double {
@@ -74,7 +75,13 @@
   font-weight: 100;
   border-top: 1px solid rgb(189, 187, 187);
   position: relative;
-  padding-top: 20%;
+
+  padding-top: 10%;
+  margin-top: -12%;
+}
+
+.grid-item .lowerTekst {
+  margin-top: -11%;
 }
 
 .grid-item .lower {
@@ -84,11 +91,12 @@
 .grid-item .sectionTitle {
   font-weight: 300;
   font-size: 30px;
+  position: absolute;
+  top: -20%;
 }
 
 .grid-item img {
   position: relative;
-  padding: 5% 10% 5% 0;
   max-width: 90%;
 }
 
@@ -113,6 +121,7 @@
   grid-template-columns: 30vw 30vw 30vw;
   margin-right: 7vw;
   margin-bottom: 10vh;
+  margin-top: 10vh;
 }
 
 .grid-item-team {
@@ -135,7 +144,9 @@
   #about-bg {
     /* The file size of this background image is 93% smaller
          * to improve page load speed on mobile internet connections */
-    background-image: url(/images/aboutbg.jpg);
+    background-image: url(aboutbg.jpg);
+    -webkit-background-size: auto 150%;
+    background-attachment: scroll;
   }
 
   .double {
@@ -147,5 +158,8 @@
 
   #about-team {
     grid-template-columns: auto;
+  }
+  .grid-item .tekst {
+    font-weight: 300;
   }
 }

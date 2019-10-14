@@ -73,10 +73,14 @@
       <p id="langSelected">EN</p>
       <div class="dropdown-content-wrapper">
         <div class="dropdown-content">
-          <div class="langChoice startL" id="ENG">ENG</div>
+          <div class="langChoice startL" id="ENG">
+            <a onclick="changeLang('../en/')">ENG</a>
+          </div>
 
           <div class="langChoice" id="CAN">廣東話</div>
-          <div class="langChoice" id="MAN">普通话</div>
+          <div class="langChoice" id="MAN">
+            <a onclick="changeLang('../cn/')">普通话</a>
+          </div>
         </div>
       </div>
     </div>
@@ -117,7 +121,7 @@
       <section class="vid">
         <div id="vidContainer">
           <video width="400" controls>
-            <source src="videos/example.mp4" type="video/mp4" />
+            <source src="../videos/example.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
         </div>

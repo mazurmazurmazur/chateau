@@ -54,11 +54,8 @@ $('.langChoice').on('click', function() {
 let eng = document.getElementById('ENG');
 let man = document.getElementById('MAN');
 
-eng.addEventListener('click', function() {
-  location.href = '../en/';
-});
-man.addEventListener('click', function() {
-  location.href = '../cn/';
-});
+function changeLang(lang) {
+  location.href = lang;
+}
 
 //END LANGUAGE
