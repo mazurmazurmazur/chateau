@@ -72,7 +72,7 @@
 
 .grid-item .tekst {
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
   border-top: 1px solid rgb(189, 187, 187);
   position: relative;
 
@@ -89,7 +89,7 @@
 }
 
 .grid-item .sectionTitle {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 30px;
   position: absolute;
   top: -20%;
