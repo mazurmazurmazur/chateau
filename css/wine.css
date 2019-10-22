@@ -262,4 +262,9 @@ body {
   .timeline .swiper-slide-content {
     margin-top: 20vh;
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin-top: 15vh !important;
+  }
 }

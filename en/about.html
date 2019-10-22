@@ -13,22 +13,38 @@
     <link href="../css/normalize.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/about.css" rel="stylesheet" />
+    <link href="../css/sliderstyle.css" rel="stylesheet" />
 
-
-   
-   <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-<link rel="manifest" href="../favicon/site.webmanifest">
-<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
 
   <body>
     <a id="main-logo" href="index.html"
-      ><img id="main-logo-img" src="../images/logo_white.png"
+      ><img id="main-logo-img" src="../images/logo_black.png"
     /></a>
     <div id="navBg"></div>
     <div class="menu-icon">
@@ -73,9 +89,40 @@
         </ul>
       </div>
     </nav>
-    <div id="about-bg"><p id="aboutTitle">About Us</p></div>
+    <!-- <div id="about-bg"><p id="aboutTitle">About Us</p></div> -->
+    <div id="slider-container">
+      <section class="slider">
+        <div id="content-three" class="slider-div backPic">
+          <div>
+            <img src="../images/about/8.jpg" />
+          </div>
+          <p class="slider-title">Company Today</p>
+        </div>
+
+        <div id="content-two" class="slider-div left">
+          <div>
+            <img src="../images/about/2.jpg" />
+          </div>
+          <p class="slider-title">History</p>
+        </div>
+
+        <div id="content-one" class="slider-div center">
+          <div>
+            <img src="../images/about/0.jpg" />
+          </div>
+          <p class="slider-title">Who are we?</p>
+        </div>
+
+        <div id="content-four" class="slider-div right">
+          <div>
+            <img src="../images/about/5.jpg" />
+          </div>
+          <p class="slider-title">The team</p>
+        </div>
+      </section>
+    </div>
     <div id="about-content">
-      <div class="grid-item">
+      <div class="grid-item about-one">
         <p class="sectionTitle">Who are we?</p>
 
         <p class="tekst lowerTekst">
@@ -94,9 +141,11 @@
           available at that time.
         </p>
       </div>
-      <div class="grid-item"><img src="../images/about/0.jpg" alt="" /></div>
-      <div class="grid-item">
-        <p class="tekst">
+      <div class="grid-item about-one">
+        <img src="../images/about/0.jpg" alt="" />
+      </div>
+      <div class="grid-item about-one">
+        <p class="tekst lowerTekst">
           52 hectares of vineyards with European varieties were laid down around
           the village. In just a few years the colony became one of the most
           prosperous villages in Bessarabia, and its wines were supplied all
@@ -122,70 +171,16 @@
         </p>
       </div>
       <div class="grid-item"><img src="../images/about/1.jpg" alt="" /></div>
-      <div class="grid-item"><img src="../images/about/2.jpg" alt="" /></div>
-      <div class="grid-item">
-        <p class="sectionTitle">History</p>
-        <p class="tekst lowerTekst">
-          In the twenties of the last century ICA, aFund owned by Baron de
-          Hirsch (Paris, France),created a Jewish agricultural commune on the
-          territory of the then Kingdom of Romania. The commune became the
-          prototype of the modern Israeli “moshav”.<br />
-          In 1926 French agronomists travelled around almost all of Bessarabia
-          looking for the best areas for viticulture. They chose a site near the
-          town of Kaushan, which they named “the ideal plot”. The land (about 60
-          acres) has been reclaimed and in 1927 the Lambrovka village was
-          founded practically as a green field site. The Fund built 52 houses, a
-          winery, and a dairy farm. Around the village, 52 hectares of vineyards
-          were laid down. Then the Fund moved 52 Jewish families from
-          neigbouring villages and towns in Bessarabia to Lambrovka . Each
-          family received 1 hectare of vineyard as their own property, as well
-          as 6 cows and sheep. French agronomists and winemakers were managing
-          the project. The winery was provided with the latest equipment
-          available at that time.
-        </p>
-      </div>
-      <div class="grid-item"><img src="../images/about/3.jpg" alt="" /></div>
-      <div class="grid-item">
-        <p class="tekst lowerTekst">
-          In just a few years Lambrovka became one of most prosperous villages
-          in Bessarabia and its wines were supplied all over Europe including
-          France.<br />
-          In 1937 the area was annexed by the Soviet Union, but the Jewish
-          community continued to exist until the beginning of World War II. The
-          entire population of Lambrovka was evacuated to Central Asia, and
-          after the war the colonists did not return to the village, moving
-          mostly to the U.S. and Israel.<br />
-          From the beginning of the 50s the winery was restored. Throughout the
-          following 40 years, “Grona” (the new name of winery) has been the
-          leading winemaking enterprise of Tarutino district, which in turn is
-          one of the largest grape zones in Ukraine and the territory of the
-          former Soviet Union.<br />
-          After the collapse of the Soviet Union, “Grona” found itself in a very
-          difficult situation, and the production of wine was almost stopped.<br />
-        </p>
+
+      <div class="grid-item about-two double">
+        <p class="sectionTitle centred">History</p>
+
+        <img class="tekst lowerTekst" src="../images/history.svg" />
       </div>
 
-      <div class="grid-item">
-        <img src="../images/about/4.jpg" alt="" />
-      </div>
-      <div class="grid-item">
-        <p class="tekst lowerTekst">
-          In 1997-2000 Bliumberg family from Odessa bought a controlling stake
-          in the company, which has thus become one of the first private
-          wineries in Ukraine. Since then the third stage of Lambrovka history
-          has begun. The winery has been restored and provided with brand new
-          equipment, including a bottling line. Wines from Lambrovka produced by
-          “AGRO-YUG, LLC” became popular throughout the independent Ukraine, and
-          were also being supplied to Germany.<br />
-          In 2002 a delegation of the ICA fund headed by its President, Baronet
-          Stephen Waley-Cohen visited Lambrovka. Representatives of the UK,
-          France and Israel inspected the new vineyards, tasted wines and
-          participated in Lambrovka’s 75th anniversary celebrations.
-        </p>
-      </div>
-      <div class="grid-item">
+      <div class="grid-item about-three">
         <p class="sectionTitle">The Company Today</p>
-        <p class="tekst">
+        <p class="tekst lowerTekst">
           Today the main emphasis is made on the development of vineyards,
           production and bulk sale of wine (the B2B sector), as well as bottling
           limited quantities of wine for the HoReCa segment.<br />
@@ -199,10 +194,12 @@
           other export markets.
         </p>
       </div>
-      <div class="grid-item"><img src="../images/about/5.jpg" /></div>
-      <div class="grid-item">
+      <div class="grid-item about-three">
+        <img src="../images/about/5.jpg" />
+      </div>
+      <div class="grid-item about-four">
         <p class="sectionTitle">The Team</p>
-        <p class="tekst">
+        <p class="tekst lowerTekst">
           Despite its active development “Chateau Grona” remains a privately
           owned companyand preserves a “family” style of management. The owners
           are at the same time top-managers who deal with finance, supply chain
@@ -215,7 +212,9 @@
           into the cultivation of grapes and creation of fine wines.
         </p>
       </div>
-      <div class="grid-item"><img src="../images/about/8.jpg" alt="" /></div>
+      <div class="grid-item about-four">
+        <img src="../images/about/8.jpg" alt="" />
+      </div>
     </div>
     <div id="about-team">
       <div class="grid-item-team">
@@ -256,7 +255,7 @@
       </div>
     </div>
     <div class="dropdown">
-      <img id="globe" src="../images/globebw.png" />
+      <img id="globe" src="../images/globe.png" />
       <p id="langSelected">EN</p>
       <div class="dropdown-content-wrapper">
         <div class="dropdown-content">
@@ -271,6 +270,7 @@
     </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="../js/slider.jquery.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/about.js"></script>
   </body>

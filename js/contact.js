@@ -94,3 +94,10 @@ $(document).ready(function() {
     }
   });
 });
+
+$(window).on('load', function() {
+  if (window.innerWidth < 800) {
+    document.getElementById('iframeMap').width = window.innerWidth - 50;
+    document.getElementById('iframeMap').height = 400;
+  }
+});

@@ -107,7 +107,7 @@ p {
   transform: translateX(0%) translateY(100%);
 }
 .nav_:after {
-  background: #181818;
+  background: #54101c;
   transition-delay: 0s;
 }
 .nav_:before {
@@ -121,7 +121,7 @@ p {
   width: 100%;
   text-align: center;
   font-size: calc(2vw + 10px);
-  color: white;
+  color: rgb(233, 192, 103);
   font-weight: 200;
   height: 100%;
   overflow-y: auto;
@@ -140,7 +140,7 @@ p {
 }
 
 .nav__list-item {
-  color: white;
+  color: rgb(233, 192, 103);
   text-decoration: none;
   list-style-type: none;
   font-size: 1.5vw;
@@ -160,7 +160,7 @@ p {
 .nav__list-item:before {
   content: '';
   position: absolute;
-  background: #ffffff;
+  background: rgb(233, 192, 103);
   width: 20px;
   height: 1px;
   top: 100%;
@@ -412,5 +412,9 @@ video {
   #main-logo img {
     width: 40vw;
     height: auto;
+  }
+
+  .slider {
+    top: 10vh;
   }
 }
