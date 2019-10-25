@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>- Chateau Grona</title>
+    <title>Contact - Chateau Grona</title>
     <meta name="author" content="Krzysztof Mazur" />
     <meta
       name="description"
@@ -23,6 +23,10 @@
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"
     />
 
     <link href="../css/normalize.css" rel="stylesheet" />
@@ -58,6 +62,9 @@
   </head>
 
   <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <a id="main-logo" href="index.html"
       ><img id="main-logo-img" src="../images/logo_black.png"
     /></a>
@@ -192,42 +199,38 @@
       </div>
     </div>
 
-    <div id="wechatWrapper">
-      <h1 id="wechatTitle">WeChat</h1>
-      <img id="wechatImg" src="../images/qr.jpg" />
+    <div class="grid-container">
+      <div class="\31 ">
+        <p class="boldText">Ganna Tsatskina<br /></p>
+        <p>Head of Export Department<br /></p>
+        <p>export@privatelabels.wine</p>
+      </div>
+      <div class="\32 ">
+        <p class="boldText">Vlad Blumberg<br /></p>
+        <p>CEO (General Director)<br /></p>
+        <p>vlad@privatelabels.wine<br /></p>
+        <p>+38095 9331232</p>
+        <br /><br />
+        <img id="wechatImg" src="../images/qr.png" />
+      </div>
+      <div class="\33 ">
+        <p class="boldText">Vladimir Eremenko <br /></p>
+        <p>Member of the Board <br /></p>
+        <p>eremenko@privatelabels.wine</p>
+      </div>
     </div>
 
     <h1 id="wechatTitle">Where to find us?</h1>
 
-    <div id="iframeWrapper">
-      <iframe
-        id="iframeMap"
-        width="800"
-        height="400"
-        frameborder="0"
-        src="https://www.bing.com/maps/embed?h=400&w=800&cp=46.329979~29.28635&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
-        scrolling="no"
-      >
-      </iframe>
-      <div
-        id="mapButtonsWrapper"
-        style="white-space: nowrap; text-align: center;  padding: 6px 0;"
-      >
-        <a
-          id="largeMapLink"
-          target="_blank"
-          href="https://www.bing.com/maps?cp=46.329979~29.28635&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD"
-          >View Larger Map</a
-        >
-        &nbsp; | &nbsp;
-        <a
-          id="dirMapLink"
-          target="_blank"
-          href="https://www.bing.com/maps/directions?cp=46.329979~29.28635&amp;sty=r&amp;lvl=11&amp;rtp=~pos.55.678599999999996_12.558899999999982____&amp;FORM=MBEDLD"
-          >Get Directions</a
-        >
-      </div>
-    </div>
+    <p class="centeredText">
+      Chateau Grona Group<br />
+      Lambrivka village Odessa region 68534 Ukraine<br />
+      +38095 9331232
+    </p>
+
+    <div id="leafletMap"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/contact.js"></script>

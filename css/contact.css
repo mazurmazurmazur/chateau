@@ -7,6 +7,10 @@ a:hover {
   margin-top: 30vh;
 }
 
+.containerContact h2 {
+  color: rgb(231, 201, 64);
+}
+
 .formCore {
   display: block;
   margin-left: auto;
@@ -19,7 +23,7 @@ textarea {
 
 .form-label {
   font-size: 12px;
-  color: #5e9bfc;
+  color: #8b3e1b;
   margin: 0;
   display: block;
   opacity: 1;
@@ -28,26 +32,26 @@ textarea {
 }
 .form-control {
   border-radius: 0;
-  border-color: #ccc;
+  border-color: rgb(180, 67, 67);
   border-width: 0 0 2px 0;
   border-style: none none solid none;
   box-shadow: none;
 }
 .form-control:focus {
   box-shadow: none;
-  border-color: #5e9bfc;
+  border-color: #69210f;
 }
 .js-hide-label {
   opacity: 0;
 }
 .js-unhighlight-label {
-  color: #999;
+  color: rgb(211, 179, 91);
 }
 .btn-start-order {
   background: 0 0 #ffffff;
-  border: 1px solid #2f323a;
+  border: 1px solid #9c1313;
   border-radius: 3px;
-  color: #2f323a;
+  color: #a52820;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   line-height: inherit;
@@ -56,21 +60,15 @@ textarea {
   text-transform: uppercase;
   transition: all 0.25s ease 0s;
 }
+
+.form-control::placeholder {
+  color: rgb(172, 151, 37);
+}
 .btn-start-order:hover,
 .btn-start-order:active,
 .btn-start-order:focus {
-  border-color: #5e9bfc;
-  color: #5e9bfc;
-}
-
-#iframeWrapper iframe,
-#iframeWrapper #mapButtonsWrapper {
-  display: block;
-  margin: auto;
-}
-
-#iframeWrapper {
-  margin-top: 10vh;
+  border-color: #cfa73a;
+  color: #f3bc46;
 }
 
 #wechatWrapper {
@@ -91,20 +89,50 @@ textarea {
   margin-top: 10vh;
 }
 
+#leafletMap {
+  display: block;
+  width: 60vw;
+  height: 60vh;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+
+.grid-container {
+  margin: 5vw;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: '\31  \32  \33 ';
+}
+
+.grid-container div {
+  max-width: 30vw;
+}
+#wechatImg {
+  width: 100%;
+}
+
+.\31 {
+  grid-area: \31;
+}
+
+.\32 {
+  grid-area: \32;
+}
+
+.\33 {
+  grid-area: \33;
+}
+
 /* MOBILE BELOW */
 
 @media screen and (max-width: 760px) {
-  .containerContact {
-    margin-top: 20vh;
-  }
-  #wechatWrapper img {
-    width: 35vw;
+  #leafletMap {
+    width: 80vw;
   }
 
-  #wechatTitle {
-    padding-bottom: 3vh;
-    border-bottom: 1px rgb(173, 172, 172) solid;
-    text-align: center;
-    width: 40vw;
+  .containerContact {
+    margin-top: 20vh;
   }
 }

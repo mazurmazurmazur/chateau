@@ -1,3 +1,9 @@
+//PAGE LOADER BELOW
+
+$(window).on('load', function() {
+  $('.loader-wrapper').fadeOut('slow');
+});
+
 // BURGER MENU BELOW, COMPILED FROM BABEL
 
 var app = (function() {
