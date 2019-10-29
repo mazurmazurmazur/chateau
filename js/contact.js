@@ -102,7 +102,7 @@ L.tileLayer(
 ).addTo(map);
 
 var greenIcon = L.icon({
-  iconUrl: '../images/favicon.png',
+  iconUrl: '../images/faviconred.png',
 
   iconSize: [50, 50], // size of the icon
   iconAnchor: [25, 50] // point of the icon which will correspond to marker's location

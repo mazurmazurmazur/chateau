@@ -476,6 +476,9 @@ video {
 
 /* MOBILE */
 @media only screen and (max-width: 767px) {
+  .noMobile {
+    display: none;
+  }
   .nav__list {
     margin-top: 15vh;
   }

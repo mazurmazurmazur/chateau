@@ -11,6 +11,12 @@
   white-space: nowrap;
 }
 
+.historyTitle {
+  padding-right: 10vw;
+  padding-bottom: 8vh;
+  border-bottom: 1px rgb(192, 189, 189) solid;
+}
+
 .menu-icon__line {
   background-color: rgb(0, 0, 0);
 }
@@ -127,6 +133,13 @@
 .about-one {
   display: block;
 }
+#historySVG {
+  border: none;
+}
+
+.about-two .double {
+  margin: 0;
+}
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
   #about-content {
@@ -172,7 +185,6 @@
     width: 100vw;
     margin: 0;
     padding: 0;
-    margin-left: 5vw;
     padding-top: 10vh;
   }
 }

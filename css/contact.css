@@ -1,3 +1,7 @@
+body {
+  margin-top: 25vh;
+}
+
 a:hover {
   text-decoration: none;
   color: white;
@@ -5,6 +9,9 @@ a:hover {
 
 .containerContact {
   margin-top: 30vh;
+  width: 30vw;
+  display: block;
+  margin: auto;
 }
 
 .containerContact h2 {
@@ -74,11 +81,11 @@ textarea {
 #wechatWrapper {
   text-align: center;
 }
-#wechatTitle {
+.wechatTitle {
   padding-bottom: 3vh;
   border-bottom: 1px rgb(173, 172, 172) solid;
   text-align: center;
-  width: 20vw;
+  width: 50vw;
   margin: auto;
 }
 #wechatWrapper img {
@@ -110,7 +117,7 @@ textarea {
   max-width: 30vw;
 }
 #wechatImg {
-  width: 100%;
+  width: 50%;
 }
 
 .\31 {
@@ -124,7 +131,14 @@ textarea {
 .\33 {
   grid-area: \33;
 }
+.leaflet-control-attribution {
+  display: none;
+}
 
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 15;
+}
 /* MOBILE BELOW */
 
 @media screen and (max-width: 760px) {
@@ -134,5 +148,34 @@ textarea {
 
   .containerContact {
     margin-top: 20vh;
+  }
+
+  #wechatTitle {
+    width: 50vw;
+  }
+
+  #wechatImg {
+    width: 50%;
+  }
+  .containerContact {
+    margin-top: 30vh;
+    width: 100vw;
+  }
+
+  .\31,
+  .\32,
+  .\33 {
+    grid-area: 'mobileArea';
+  }
+
+  .grid-container div {
+    min-width: 80vw;
+  }
+  .grid-container {
+    grid-template-areas: 'mobileArea';
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    row-gap: 10vh;
   }
 }

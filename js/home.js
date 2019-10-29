@@ -17,3 +17,14 @@ $('#content4').on('click', function() {
 $('#content5').on('click', function() {
   window.location = 'contact.html';
 });
+
+$('#arrowDownContainer img').on('click', function() {
+  if (window.matchMedia('screen and (min-width: 900px)').matches) {
+    $('body, html').animate(
+      {
+        scrollTop: 500
+      },
+      1000
+    );
+  }
+});

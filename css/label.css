@@ -7,7 +7,7 @@ body {
 }
 
 #customBottle {
-  width: 25vw;
+  width: 45vw;
   display: block;
   margin: auto;
 }
@@ -300,6 +300,9 @@ body {
 /* ================ Timeline Media Queries ================ */
 
 @media screen and (max-width: 660px) {
+  #labelSVG {
+    width: 80vw;
+  }
   #customBottle {
     width: 80vw;
     margin-left: -35px;
