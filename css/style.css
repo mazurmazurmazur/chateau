@@ -534,3 +534,10 @@ video {
     top: 10vh;
   }
 }
+
+/* Desktop only */
+@media screen and (min-width: 760px) {
+  .noDesktop {
+    display: none;
+  }
+}
