@@ -53,7 +53,9 @@
     <a id="main-logo" href="index.html"
       ><img id="main-logo-img" src="../images/logo_black.png"
     /></a>
-    <div id="navBg"></div>
+    <div id="navBg">
+      <p id="private-label-menu-text">Producer of Private Label Wines</p>
+    </div>
     <div class="menu-icon">
       <span class="menu-icon__line menu-icon__line-left"></span>
       <span class="menu-icon__line"></span>
@@ -63,7 +65,7 @@
     <nav class="nav_">
       <div class="nav__content">
         <div id="menu-logo-wrapper" class="nav__list-item">
-          <img id="menu-logo" src="../images/logo_white.png" />
+          <img id="menu-logo" src="../images/logo_black.png" />
         </div>
         <ul class="nav__list">
           <li>
@@ -72,8 +74,21 @@
             >
           </li>
           <li>
-            <a id="aboutButton" class="nav__list-item" href="about.html"
-              >ABOUT US</a
+            <a id="aboutButton" class="nav__list-item" href="label.html"
+              >PRIVATE LABEL</a
+            >
+          </li>
+          <li>
+            <a id="PLChinaButton" class="nav__list-item" href="china-label.html"
+              >PRIVATE LABEL IN CHINA</a
+            >
+          </li>
+          <li>
+            <a
+              id="whyUkrainianButton"
+              class="nav__list-item"
+              href="why-ukrainian.html"
+              >WHY UKRAINIAN WINES?</a
             >
           </li>
           <li>
@@ -83,8 +98,8 @@
           </li>
 
           <li>
-            <a id="exhibitionsButton" class="nav__list-item" href="label.html"
-              >PRIVATE LABEL</a
+            <a id="exhibitionsButton" class="nav__list-item" href="about.html"
+              >ABOUT US</a
             >
           </li>
 
@@ -114,28 +129,41 @@
     </div>
     <div id="home-content">
       <section class="slider">
-        <div class="slider-div backPic">
+        <div class="slider-div left">
+          <div>
+            <img id="content6" src="../images/slider6.jpg" />
+          </div>
+          <p class="slider-title">Private Label in China</p>
+        </div>
+        <div class="slider-div center">
           <div>
             <img id="content3" src="../images/slider1.jpg" />
           </div>
           <p class="slider-title">Private Label</p>
         </div>
 
-        <div id="content5" class="slider-div left">
+        <div class="slider-div right">
+          <div>
+            <img id="content7" src="../images/slider7.jpg" />
+          </div>
+          <p class="slider-title">Why Ukrainian Wines?</p>
+        </div>
+
+        <div id="content5" class="slider-div backPic">
           <div>
             <img src="../images/slider2.jpg" />
           </div>
           <p class="slider-title">Contact</p>
         </div>
 
-        <div id="content1" class="slider-div center">
+        <div id="content1" class="slider-div backPic">
           <div>
             <img src="../images/slider3.jpg" />
           </div>
           <p class="slider-title">Home</p>
         </div>
 
-        <div id="content2" class="slider-div right">
+        <div id="content2" class="slider-div backPic">
           <div>
             <img src="../images/slider4.jpg" />
           </div>
@@ -154,24 +182,31 @@
       </div>
       <section class="desc">
         <div id="mainPageDesc">
-          <h1 id="mainTextHeader">Who are we?</h1>
+          <h1 id="mainTextHeader">About Private Label</h1>
           <p lang="en" id="mainDescText">
-            The “AGRO-YUG” winery (a member of CHATEAU GRONA GROUP) originates
-            from a winemaking colony founded in 1927 by the French fund “ICA” on
-            the territory of Bessarabia – an area of modern Ukraine with more
-            than a thousand years’ history of winemaking. For almost 90 years of
-            its history, just all of Ukrainian Bessarabia, the winery survived
-            many challenges, economic successes and downfalls. And through all
-            these years our winery has been one of the best known and most
-            respected wineries of Bessarabia.
+            Chateau Grona Group is one of the 10th largest wine producers in
+            Ukraine. Our specialization is creating high-quality PRIVATE LABEL
+            wines for China market. CHATEAU GRONA GROUP originates from a
+            winemaking colony founded in 1927 by the French fund "ICA" on the
+            territory of Bessarabia – an area of modern Ukraine with more than a
+            thousand years' history of winemaking. For almost 90 years of its
+            history, just all of Ukrainian Bessarabia, the winery survived many
+            challenges, economic successes, and downfalls. And through all these
+            years our winery has been one of the best known and most respected
+            wineries of Bessarabia.
           </p>
-          <a class="readMore" href="about.html">Read More...</a>
+          <a class="readMore" href="label.html">Read More...</a>
         </div>
       </section>
       <section class="vid">
         <div id="vidContainer">
-          <video width="400" controls preload="none">
-            <source src="../videos/example.mp4" type="video/mp4" />
+          <video
+            width="400"
+            controls
+            preload="none"
+            poster="../images/poster.jpg"
+          >
+            <source src="../videos/video.m4v" type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
         </div>

@@ -17,6 +17,12 @@ $('#content4').on('click', function() {
 $('#content5').on('click', function() {
   window.location = 'contact.html';
 });
+$('#content6').on('click', function() {
+  window.location = 'china-label.html';
+});
+$('#content7').on('click', function() {
+  window.location = 'why-ukrainian.html';
+});
 
 $('#arrowDownContainer img').on('click', function() {
   if (window.matchMedia('screen and (min-width: 900px)').matches) {

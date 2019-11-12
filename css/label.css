@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(50, 50, 50);
-  font-size: 112.5%;
   line-height: 1.6em;
 }
 
@@ -88,6 +87,10 @@ body {
   display: block;
   margin: -1vh;
   padding: 0;
+}
+
+.slider-title {
+  line-height: 1em;
 }
 
 /* #wineCustoms > li {

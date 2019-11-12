@@ -26,6 +26,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Jenson';
+  src: url('fonts/Adobe\ Jenson\ Pro\ Regular.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jenson';
+  src: url('fonts/Adobe\ Jenson\ Pro\ Semibold\ Caption.otf.otf')
+    format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 body,
 html {
   overflow-x: hidden;
@@ -142,7 +156,7 @@ p {
   transform: translateX(0%) translateY(100%);
 }
 .nav_:after {
-  background: #54101c;
+  background: #ffffff;
   transition-delay: 0s;
 }
 .nav_:before {
@@ -157,7 +171,7 @@ p {
   text-align: center;
   font-size: calc(2vw + 10px);
   color: rgb(233, 192, 103);
-  font-weight: 200;
+  font-weight: 300;
   height: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -175,7 +189,8 @@ p {
 }
 
 .nav__list-item {
-  color: rgb(233, 192, 103);
+  color: #771a1a;
+  font-weight: 500;
   text-decoration: none;
   list-style-type: none;
   font-size: 1.5vw;
@@ -218,7 +233,7 @@ body.nav-active {
   margin: 0;
 }
 body.nav-active .menu-icon__line {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(150, 12, 12);
   -webkit-transform: translateX(0px) rotate(-45deg);
   transform: translateX(0px) rotate(-45deg);
   z-index: 20;
@@ -226,7 +241,7 @@ body.nav-active .menu-icon__line {
 body.nav-active .menu-icon__line-left {
   -webkit-transform: translateX(1px) rotate(45deg);
   transform: translateX(1px) rotate(45deg);
-  background-color: white;
+  background-color: rgb(150, 12, 12);
 }
 body.nav-active .menu-icon__line-right {
   -webkit-transform: translateX(-2px) rotate(45deg);
@@ -351,6 +366,18 @@ video {
   height: auto;
 }
 
+.readMore {
+  text-decoration: none;
+  color: rgb(167, 164, 164);
+  position: absolute;
+  right: 20vw;
+  transition: 0.5s;
+}
+
+.readMore:hover {
+  color: black;
+}
+
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -383,6 +410,19 @@ video {
 
 .slider {
   cursor: pointer;
+}
+
+#private-label-menu-text {
+  font-family: 'Jenson';
+  font-size: 1.7em;
+  text-align: center;
+  white-space: nowrap;
+  color: rgb(131, 15, 15);
+  font-weight: 500;
+  border-bottom: rgb(233, 192, 103) 1px solid;
+  width: 30vw;
+  margin: auto;
+  margin-top: 12.5vh;
 }
 
 @keyframes loader {
@@ -432,6 +472,10 @@ video {
 /* TABLET */
 
 @media only screen and (max-width: 1024px) {
+  #private-label-menu-text {
+    width: 70vw;
+    font-size: 1.2em;
+  }
   .menu-icon {
     right: 8vw;
     transform: scale(1.5);
@@ -476,6 +520,16 @@ video {
 
 /* MOBILE */
 @media only screen and (max-width: 767px) {
+  #private-label-menu-text {
+    font-size: 0.9em;
+
+    font-weight: 500;
+    border-bottom: rgb(233, 192, 103) 1px solid;
+    width: 60vw;
+
+    margin-top: 20vh;
+    word-spacing: 0.7em;
+  }
   .noMobile {
     display: none;
   }
@@ -508,7 +562,7 @@ video {
   }
 
   #navBg {
-    height: 20vh;
+    height: 25vh;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -536,7 +590,7 @@ video {
 }
 
 /* Desktop only */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 761px) {
   .noDesktop {
     display: none;
   }

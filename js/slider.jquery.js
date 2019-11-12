@@ -86,8 +86,19 @@
     var left = cent - 1 < 0 ? len - 1 : cent - 1,
       right = cent + 2 > len ? 0 : cent + 1,
       prevleft = left - 1 < 0 ? len - 1 : left - 1,
-      prevright = right + 2 > len ? 0 : right + 1;
-    return [left, cent, right, prevleft, prevright];
+      prevright = right + 2 > len ? 0 : right + 1,
+      prevprevright = prevright + 2 > len ? 0 : prevright + 1,
+      prevprevleft = prevleft - 1 < 0 ? len - 1 : prevleft - 1;
+
+    return [
+      left,
+      cent,
+      right,
+      prevleft,
+      prevright,
+      prevprevright,
+      prevprevleft
+    ];
   };
 
   $.fn.MWslider.moveSlider = function(that, side, config) {
@@ -108,6 +119,7 @@
     that.elements.eq(pos[0]).addClass('left');
 
     for (let i = 3; i < pos.length; i++) {
+      console.log(pos.length);
       that.elements.eq(pos[i]).addClass('backPic');
     }
   };

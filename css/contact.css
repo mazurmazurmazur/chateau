@@ -157,7 +157,7 @@ textarea {
   top: 30vh;
   width: 20vw; /* Full width */
   height: 50vw; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: hidden; /* Enable scroll if needed */
   z-index: 18;
 }
 
@@ -221,6 +221,10 @@ textarea {
 /* MOBILE BELOW */
 
 @media screen and (max-width: 760px) {
+  #addressMap {
+    text-align: center;
+    margin-top: 5%;
+  }
   #leafletMap {
     width: 80vw;
   }
@@ -267,5 +271,33 @@ textarea {
     grid-template-rows: auto;
     justify-items: center;
     row-gap: 10vh;
+  }
+}
+
+/* Desktop only */
+@media screen and (min-width: 761px) {
+  #mapContainer {
+    display: inline-block;
+  }
+  #leafletMap {
+    margin-top: 2%;
+    display: inline-block;
+    width: 35vw;
+    height: 35vh;
+    margin-left: 40vw;
+  }
+
+  .mapTitle {
+    margin-left: 40vw;
+    margin-top: -25%;
+    font-size: 20px;
+  }
+
+  #addressMap {
+    display: inline-block;
+    float: right;
+    text-align: center;
+    margin-top: 9%;
+    padding-left: 3vw;
   }
 }

@@ -23,20 +23,8 @@
   margin-bottom: 10vh;
 }
 
-.readMore {
-  text-decoration: none;
-  color: rgb(167, 164, 164);
-  position: absolute;
-  right: 20vw;
-}
-
-.readMore:hover {
-  color: black;
-}
-
 video {
-  background: transparent url('../images/videoposter.jpg') 50% 50% / cover
-    no-repeat;
+  background: transparent url('../images/poster.jpg') 50% 50% / cover no-repeat;
 }
 
 .slider-div {
@@ -80,5 +68,8 @@ video {
 
   .desc {
     margin-top: 10vh;
+  }
+  #arrowDownContainer {
+    display: none;
   }
 }

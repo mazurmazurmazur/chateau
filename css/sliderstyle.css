@@ -171,7 +171,6 @@
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
   .slider-title {
-    bottom: -30%;
-    white-space: nowrap;
+    bottom: -50%;
   }
 }

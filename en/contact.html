@@ -68,7 +68,9 @@
     <a id="main-logo" href="index.html"
       ><img id="main-logo-img" src="../images/logo_black.png"
     /></a>
-    <div id="navBg"></div>
+    <div id="navBg">
+      <p id="private-label-menu-text">Producer of Private Label Wines</p>
+    </div>
     <div class="menu-icon">
       <span class="menu-icon__line menu-icon__line-left"></span>
       <span class="menu-icon__line"></span>
@@ -78,7 +80,7 @@
     <nav class="nav_">
       <div class="nav__content">
         <div class="nav__list-item" id="menu-logo-wrapper">
-          <img id="menu-logo" src="../images/logo_white.png" />
+          <img id="menu-logo" src="../images/logo_black.png" />
         </div>
         <ul class="nav__list">
           <li>
@@ -87,8 +89,21 @@
             >
           </li>
           <li>
-            <a id="aboutButton" class="nav__list-item" href="about.html"
-              >ABOUT US</a
+            <a id="aboutButton" class="nav__list-item" href="label.html"
+              >PRIVATE LABEL</a
+            >
+          </li>
+          <li>
+            <a id="PLChinaButton" class="nav__list-item" href="china-label.html"
+              >PRIVATE LABEL IN CHINA</a
+            >
+          </li>
+          <li>
+            <a
+              id="whyUkrainianButton"
+              class="nav__list-item"
+              href="why-ukrainian.html"
+              >WHY UKRAINIAN WINES?</a
             >
           </li>
           <li>
@@ -98,8 +113,8 @@
           </li>
 
           <li>
-            <a id="exhibitionsButton" class="nav__list-item" href="label.html"
-              >PRIVATE LABEL</a
+            <a id="exhibitionsButton" class="nav__list-item" href="about.html"
+              >ABOUT US</a
             >
           </li>
 
@@ -128,11 +143,6 @@
 
     <div class="grid-container">
       <div class="\31 ">
-        <p class="boldText">Ganna Tsatskina<br /></p>
-        <p>Head of Export Department<br /></p>
-        <p class="emailAddressGrid">export@privatelabels.wine</p>
-      </div>
-      <div class="\32 ">
         <p class="boldText">Vlad Blumberg<br /></p>
         <p>CEO (General Director)<br /></p>
         <p class="emailAddressGrid">vlad@privatelabels.wine<br /></p>
@@ -140,6 +150,12 @@
         <br /><br />
         <img id="wechatImg" src="../images/qr.png" />
       </div>
+      <div class="\32 ">
+        <p class="boldText">Ganna Tsatskina<br /></p>
+        <p>Head of Export Department<br /></p>
+        <p class="emailAddressGrid">export@privatelabels.wine</p>
+      </div>
+
       <div class="\33 ">
         <p class="boldText">Vladimir Eremenko <br /></p>
         <p>Member of the Board <br /></p>
@@ -147,16 +163,18 @@
       </div>
     </div>
 
-    <h1 class="wechatTitle">Where to find us?</h1>
+    <h1 class="wechatTitle mapTitle">Where to find us?</h1>
 
-    <p class="centeredText">
-      Chateau Grona Group<br />
-      Lambrivka village<br />
-      Odessa region<br />
-      68534 Ukraine<br />
-    </p>
+    <div id="mapContainer">
+      <p id="addressMap">
+        Chateau Grona Group<br />
+        Lambrivka village<br />
+        Odessa region<br />
+        68534 Ukraine<br />
+      </p>
 
-    <div id="leafletMap"></div>
+      <div id="leafletMap"></div>
+    </div>
 
     <div class="containerContact noDesktop">
       <div class="row">
