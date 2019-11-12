@@ -144,15 +144,11 @@
   opacity: 0;
   transition: 1s;
 }
-.slider > .leftNavContainer {
-  margin-right: 18%;
-}
 
-.slider > .rightNavContainer {
-  margin-left: 19%;
-}
 .slider > .navContainer > .leftClass,
 .slider > .navContainer > .rightClass {
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 28px;
   background: url(../images/slider_arrow.png) no-repeat center;
@@ -160,12 +156,23 @@
   position: absolute;
   opacity: 0.6;
 }
+
+.slider > .leftNavContainer {
+  margin-right: 18%;
+}
+
+.slider > .rightNavContainer {
+  margin-left: 19%;
+}
 .slider > .navContainer > .rightClass {
   right: 0;
   background-position-x: -30px;
 }
 .slider > .navContainer > .leftClass {
   left: 0;
+}
+.slider > .navContainer > .rightClass {
+  right: 0;
 }
 
 /* For mobile devices */
