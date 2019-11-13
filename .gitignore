@@ -38,6 +38,7 @@ bower_components
 build/Release
 
 # Dependency directories
+./node_modules/
 node_modules/
 jspm_packages/
 
@@ -101,4 +102,4 @@ public
 .tern-port
 
 #videos
-videos/
+./videos/
