@@ -65,3 +65,34 @@ function changeLang(lang) {
 }
 
 //END LANGUAGE
+
+let cCustomWine = $('#cCustomWine');
+let cOrderProcess = $('#cOrderProcess');
+let cWineMaking = $('#cWineMaking');
+let cAbout = $('#cAbout');
+let cContact = $('#cContact');
+
+cCustomWine.on('click', () => {
+  window.location.href = 'label.html';
+});
+
+cOrderProcess.on('click', () => {
+  window.location.href = 'order.html';
+});
+
+cWineMaking.on('click', () => {
+  window.location.href = 'wine.html';
+});
+
+cAbout.on('click', () => {
+  window.location.href = 'about.html';
+});
+
+cContact.on('click', () => {
+  window.location.href = 'contact.html';
+});
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}

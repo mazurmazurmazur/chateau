@@ -11,12 +11,6 @@
   white-space: nowrap;
 }
 
-.historyTitle {
-  padding-right: 10vw;
-  padding-bottom: 8vh;
-  border-bottom: 1px rgb(192, 189, 189) solid;
-}
-
 .menu-icon__line {
   background-color: rgb(0, 0, 0);
 }
@@ -25,18 +19,16 @@
 }
 
 #about-content {
-  margin-top: 20vh;
+  margin-top: 30vh;
   display: grid;
   grid-row-gap: 100px;
   grid-template-columns: 50vw auto;
-  margin-right: 7vw;
 }
 
 .grid-item {
   text-align: justify;
   padding: 5%;
   position: relative;
-  display: none;
 }
 
 .double {
@@ -46,7 +38,7 @@
 .grid-item .tekst {
   font-size: 20px;
   font-weight: 300;
-  border-top: 1px solid rgb(189, 187, 187);
+  /* border-top: 1px solid rgb(189, 187, 187); */
   position: relative;
 
   padding-top: 10%;
@@ -85,32 +77,50 @@
   padding-top: 10%;
 }
 
-.grid-item .sectionTitle {
+.sectionTitle {
   font-weight: 500;
   font-size: 30px;
+
+  padding-bottom: 5vh;
+  border-bottom: 1px rgb(179, 177, 177) solid;
+
+  text-align: center;
+  max-width: 60vw;
+  margin: auto;
+}
+
+.grid-item .sectionTitle {
   position: absolute;
   top: -15vh;
+  padding-right: 10vw;
+}
+
+.sectionTitle.subtitle {
+  font-size: 23px;
 }
 
 .sectionTitle.centred {
   text-align: center;
   top: -10%;
-  left: 8%;
   right: 0;
   margin: auto;
+  padding-right: 0;
+  left: 0;
+  width: 50%;
 }
 
 .grid-item img {
   position: relative;
   max-width: 90%;
+  left: -0.5%;
 }
 
-#about-content > .grid-item .tekst::after {
+/* #about-content > .grid-item .tekst::after {
   padding: 0;
 
   margin: 0;
 
-  display: block; /* probably not really needed? */
+  display: block; /* probably not really needed? */ /*
   content: '';
   width: 60%;
   height: 3px;
@@ -118,16 +128,15 @@
   position: absolute;
   right: 0;
   top: -2px;
-}
+} */
 
 #about-team {
   display: grid;
   grid-row-gap: 50px;
   grid-template-columns: 30vw 30vw 30vw;
-  margin-right: 7vw;
   margin-bottom: 10vh;
   margin-top: 10vh;
-  display: none;
+  justify-content: center;
 }
 
 .grid-item-team {
@@ -155,11 +164,14 @@
 .about-two .double {
   margin: 0;
 }
+.historyTitle {
+  margin-top: 15vh;
+}
 
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
   #about-content {
-    margin-top: 30vh;
+    margin-top: 45vh;
   }
 
   #about-bg {
@@ -189,12 +201,27 @@
     top: -15vh;
   }
 
-  .sectionTitle.centred {
+  .sectionTitle {
     top: -15vh;
+    max-width: 80vw;
+    margin-bottom: 12vh;
+  }
+
+  .sectionTitle.centred {
+    margin-bottom: 12vh;
   }
 
   .grid-item img {
     max-width: 100%;
+  }
+
+  .double img {
+    width: 90vw;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 
   #historySVG {

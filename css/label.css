@@ -21,9 +21,14 @@ body {
   opacity: 0.4;
 } */
 .mainTextHeader {
+  margin: auto;
+  margin-top: 30vh;
   text-align: center;
   margin-bottom: 3vw;
   font-size: 30px;
+  padding-bottom: 5vh;
+  width: 60vw;
+  border-bottom: 1px solid gainsboro;
 }
 
 .mainPageDesc p {
@@ -33,21 +38,21 @@ body {
   line-height: 4vh;
   margin-bottom: 2em;
 }
-
+/* 
 .mainPageDesc p:first-of-type {
   border-top: 1px solid rgba(128, 128, 128, 0.603);
   padding-top: 2vh;
   font-size: 2.5vh;
-}
+} */
 
 .mainPageDesc {
-  width: 60vw;
+  width: 70vw;
   margin: auto;
   margin-bottom: 10vh;
 }
 
 #secondP {
-  border-top: 1px solid rgba(128, 128, 128, 0.603);
+  /* border-top: 1px solid rgba(128, 128, 128, 0.603); */
   padding-top: 2vh;
   margin: auto;
   width: 50vw;
@@ -91,6 +96,10 @@ body {
 
 .slider-title {
   line-height: 1em;
+}
+
+.slider.order-slider {
+  width: 50vw;
 }
 
 /* #wineCustoms > li {
@@ -300,24 +309,28 @@ body {
   margin-bottom: 10vh;
 }
 
-/* ================ Timeline Media Queries ================ */
+/* ================ Mobile Media Queries ================ */
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 760px) {
+  .mainPageDesc {
+    width: 90vw;
+  }
+  .mainTextHeader {
+    width: 80vw;
+  }
+
   #labelSVG {
     width: 80vw;
   }
   #customBottle {
     width: 80vw;
-    margin-left: -35px;
   }
   #wineCustoms li:before {
     width: 5vw;
     height: 5vw;
     margin-left: -8%;
   }
-  #slider-container {
-    margin-bottom: 15vh;
-  }
+
   .timeline {
     width: 100%;
     padding: 4em 0 1em 0;
@@ -390,8 +403,12 @@ body {
     position: relative;
     margin: 1em 1em 0 1em;
     padding: 1em;
-
     z-index: 15;
+  }
+
+  .slider.order-slider {
+    width: auto;
+    margin-bottom: 20vh;
   }
 }
 
@@ -406,16 +423,6 @@ body {
   margin: 15px;
 }
 
-/* OVERRIDING BOOTSTRAP */
-
-.nav_ > div > ul > li > a:hover {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.label-section {
-  display: none;
-}
-#langSelected {
-  border: none;
+.slider-div {
+  height: auto !important;
 }

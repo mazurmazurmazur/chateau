@@ -7,8 +7,9 @@ a:hover {
   color: white;
 }
 
+/* GENERAL CONTACT FORM */
+
 .containerContact {
-  background-color: #800505;
   color: rgb(211, 179, 91);
   margin-top: 30vh;
   width: 100%;
@@ -20,7 +21,7 @@ a:hover {
 }
 
 .containerContact h2 {
-  color: rgb(231, 201, 64);
+  color: var(--main-bg-color);
 }
 
 .formCore {
@@ -47,7 +48,7 @@ textarea {
   border-radius: 5px;
   border: rgb(185, 168, 168) 1px solid;
   box-shadow: none;
-  background-color: #800505;
+  background-color: var(--contact-form-color);
 }
 .form-control:focus {
   box-shadow: none;
@@ -85,6 +86,8 @@ textarea {
   border-color: #cfa73a;
   color: #f3bc46;
 }
+
+/* END OF GENERAL CONTACT FORM */
 
 #wechatWrapper {
   text-align: center;
@@ -163,7 +166,7 @@ textarea {
 
 /* Modal Content */
 .modal-content {
-  background-color: #800505;
+  background-color: var(--contact-form-color);
   position: relative;
   padding: 0;
   border: 1px solid #888;
@@ -201,12 +204,12 @@ textarea {
 /* The Close Button */
 .close-modal {
   width: 10%;
-  color: white;
+  color: rgb(235, 210, 210);
   float: right;
   font-size: 40px;
   margin: 0;
   padding: 0;
-  background-color: #800505;
+
   line-height: 30px;
 }
 
@@ -236,13 +239,13 @@ textarea {
   .containerContact {
     margin-top: 20vh;
     background-color: white;
-    border: #800505 solid 1px;
+    border: var(--contact-form-color) solid 1px;
     border-radius: 5px;
   }
 
   .btn-start-order {
     color: gold;
-    background: #800505;
+    background: var(--contact-form-color);
   }
   #wechatTitle {
     width: 50vw;

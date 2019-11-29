@@ -40,6 +40,11 @@
   font-style: normal;
 }
 
+:root {
+  --main-bg-color: #992323;
+  --contact-form-color: rgba(245, 244, 244, 0.637);
+}
+
 body,
 html {
   overflow-x: hidden;
@@ -62,6 +67,10 @@ p {
 .centeredText {
   margin-top: 5%;
   text-align: center;
+}
+
+.genericBorder {
+  border: 1px solid black;
 }
 
 #main-logo {
@@ -289,6 +298,47 @@ body.nav-active .nav__list-item:nth-child(4) {
 body.nav-active .nav__list-item:nth-child(5) {
   transition-delay: 1s;
 }
+
+/* END NAVIGATION */
+
+/* pulsing arrow down */
+#arrowDownContainer {
+  width: 3vw;
+  display: block;
+  margin: auto;
+}
+
+#arrowDownContainer img {
+  animation: 5s pulse infinite;
+  width: inherit;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* caption above arrow */
+.textAboveArrow {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: 1s;
+  color: var(--main-bg-color);
+  font-weight: 500;
+}
+
+.textAboveArrow:hover {
+  font-size: 2em;
+}
+
+/* END PULSING ARROW */
+
+/* LANGUAGE BELOW */
 .dropdown {
   position: fixed;
   bottom: 5vh;
@@ -384,7 +434,7 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #800505;
+  background-color: var(--main-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,6 +570,10 @@ video {
 
 /* MOBILE */
 @media only screen and (max-width: 767px) {
+  #vidContainer {
+    width: 80vw;
+  }
+
   #private-label-menu-text {
     font-size: 0.9em;
 
@@ -594,4 +648,15 @@ video {
   .noDesktop {
     display: none;
   }
+}
+
+/* OVERRIDING BOOTSTRAP */
+
+.nav_ > div > ul > li > a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+#langSelected {
+  border: none;
 }

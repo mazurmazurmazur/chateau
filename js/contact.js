@@ -95,22 +95,7 @@ $(document).ready(function() {
   });
 });
 
-var map = L.map('leafletMap').setView([46.327, 29.287], 13);
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
-L.tileLayer(
-  'http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}'
-).addTo(map);
-
-var greenIcon = L.icon({
-  iconUrl: '../images/faviconred.png',
-
-  iconSize: [50, 50], // size of the icon
-  iconAnchor: [25, 50] // point of the icon which will correspond to marker's location
-});
-
-var marker = L.marker([46.322, 29.29], { icon: greenIcon }).addTo(map);
-
-// Make the DIV element draggable:
+// Make the MODAL element draggable:
 dragElement(document.querySelector('.modal'));
 
 function dragElement(elmnt) {
@@ -128,7 +113,7 @@ function dragElement(elmnt) {
 
   function dragMouseDown(e) {
     e = e || window.event;
-    e.preventDefault();
+    // e.preventDefault();
     // get the mouse cursor position at startup:
     pos3 = e.clientX;
     pos4 = e.clientY;
@@ -160,8 +145,6 @@ function dragElement(elmnt) {
 // Get the modal
 var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName('close-modal')[0];
 
@@ -178,3 +161,21 @@ $(window).on('load', function() {
 span.onclick = function() {
   modal.style.display = 'none';
 };
+
+// MAP BELOW
+var map = L.map('leafletMap').setView([46.327, 29.287], 13);
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+L.tileLayer(
+  'http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}'
+).addTo(map);
+
+var greenIcon = L.icon({
+  iconUrl: '../images/faviconred.png',
+
+  iconSize: [50, 50], // size of the icon
+  iconAnchor: [25, 50] // point of the icon which will correspond to marker's location
+});
+
+var marker = L.marker([46.322, 29.29], { icon: greenIcon }).addTo(map);
+
+//END MAP

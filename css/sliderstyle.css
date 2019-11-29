@@ -124,7 +124,7 @@
 }
 .slider > div.center {
   z-index: 2;
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.5);
 }
 .slider > div.right {
   transform: translate(18.25%, -50%);
@@ -179,5 +179,9 @@
 @media only screen and (max-width: 767px) {
   .slider-title {
     bottom: -50%;
+  }
+
+  .slider {
+    margin-top: -10vh;
   }
 }
