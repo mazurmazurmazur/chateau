@@ -10,12 +10,22 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <link href="../css/normalize.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/contact-modal.css" rel="stylesheet" />
     <link href="../css/about.css" rel="stylesheet" />
-    <link href="../css/wine.css" rel="stylesheet" />
 
     <link href="../css/sliderstyle.css" rel="stylesheet" />
+    <link href="../css/wine.css" rel="stylesheet" />
+
+    <link
+      href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css"
+      rel="stylesheet"
+    />
 
     <link
       rel="apple-touch-icon"
@@ -61,53 +71,66 @@
     </div>
 
     <nav class="nav_">
-        <div class="nav__content">
-          <div class="nav__list-item" id="menu-logo-wrapper">
-            <img id="menu-logo" src="../images/logo_black.png" />
-          </div>
-          <ul class="nav__list">
-            <li>
-              <a id="aboutButton" class="nav__list-item" href="label.html"
-                >CREATE CUSTOM WINES</a
-              >
-            </li>
-  
-            <li>
-              <a id="aboutButton" class="nav__list-item" href="order.html"
-                >ORDER PROCESS</a
-              >
-            </li>
-            <li>
-              <a id="PLChinaButton" class="nav__list-item" href="china-label.html"
-                >PRIVATE LABEL IN CHINA</a
-              >
-            </li>
-  
-            <li>
-              <a id="museumButton" class="nav__list-item" href="wine.html"
-                >WINE MAKING</a
-              >
-            </li>
-  
-            <li>
-              <a id="exhibitionsButton" class="nav__list-item" href="about.html"
-                >ABOUT US</a
-              >
-            </li>
-  
-            <li>
-              <a id="contactButton" class="nav__list-item" href="contact.html"
-                >CONTACT</a
-              >
-            </li>
-          </ul>
+      <div class="nav__content">
+        <div class="nav__list-item" id="menu-logo-wrapper">
+          <img id="menu-logo" src="../images/logo_black.png" />
         </div>
-      </nav>
-    <!-- <div id="about-bg"><p id="aboutTitle">About Us</p></div> -->
+        <ul class="nav__list">
+          <li>
+            <a id="aboutButton" class="nav__list-item" href="label.html"
+              >CREATE CUSTOM WINES</a
+            >
+          </li>
+
+          <li>
+            <a id="aboutButton" class="nav__list-item" href="order.html"
+              >ORDER PROCESS</a
+            >
+          </li>
+          <li>
+            <a id="PLChinaButton" class="nav__list-item" href="index.html"
+              >PRIVATE LABEL IN CHINA</a
+            >
+          </li>
+
+          <li>
+            <a id="museumButton" class="nav__list-item" href="wine.html"
+              >WINEMAKING</a
+            >
+          </li>
+
+          <li>
+            <a id="exhibitionsButton" class="nav__list-item" href="about.html"
+              >ABOUT US</a
+            >
+          </li>
+
+          <li>
+            <a id="contactButton" class="nav__list-item" href="contact.html"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      class="arrowDownContainer arrowUpContainer upside-down"
+      onclick="newWindow('order.html')"
+    >
+      <img src="../images/angle-arrow-down.svg" />
+    </div>
+
+    <p
+      class="centeredText textAboveArrow textBelowArrow "
+      onclick="newWindow('order.html')"
+    >
+      Back to Order Process
+    </p>
 
     <div id="about-content" class="wine-content">
       <div class="grid-item double" style="margin-top: 15vh;">
-        <p class="sectionTitle centred">Wine Making</p>
+        <p class="sectionTitle centred">Winemaking</p>
 
         <img src="../images/infographics/winenumbers.png" />
       </div>
@@ -133,31 +156,42 @@
         <img src="../images/wine/4.jpg" />
       </div>
     </div>
+    <p class="sectionTitle subtitle " style="margin-bottom: 5vh">
+      Our Vineyards
+    </p>
 
-      <p class="sectionTitle subtitle ">Our Vineyards</p>
-  
+    <div class="grid-item double" style="padding-top: 0; padding-bottom:5vh;">
+      <p class="tekst lowerTekst">
+        On 339 hectares of our vineyards we grow famous European grape varieties
+        (Cabernet Sauvignon, Merlot, Pinot Noir, Bastardo, Chardonnay ,
+        Sauvignon Blanc, Muscat), as well as unique local varieties of Odessa
+        Black , Saperavi, Sukholimansky. ”Chateau Grona ” is one of the two
+        companies in Ukraine and one of the few in the world, cultivating
+        ancient Turkish grape variety Telti-Kuruk – ”Fox tail”.
+      </p>
+    </div>
 
-    <div id="slider-container" >
+    <div id="slider-container">
       <section class="slider wine-slider">
-        <div class="slider-div backPic">
+        <div class="slider-div backPic" data-src="../images/slider5.jpg">
           <div>
             <img src="../images/slider5.jpg" />
           </div>
         </div>
 
-        <div class="slider-div left">
+        <div class="slider-div left" data-src="../images/wine/1.jpg">
           <div>
             <img src="../images/wine/1.jpg" />
           </div>
         </div>
 
-        <div class="slider-div center">
+        <div class="slider-div center" data-src="../images/wine/3.jpg">
           <div>
             <img src="../images/wine/3.jpg" />
           </div>
         </div>
 
-        <div class="slider-div right">
+        <div class="slider-div right" data-src="../images/wine/6.jpg">
           <div>
             <img src="../images/wine/6.jpg" />
           </div>
@@ -165,18 +199,86 @@
       </section>
     </div>
 
-    <p class="centeredText textAboveArrow" id="cAbout" style="z-index: 1000; ;
-    
-    ">
-        About
-      </p>
-      <div id="arrowDownContainer" class="noMobile">
-        <img src="../images/angle-arrow-down.svg" />
+    <p
+      class="centeredText mt5 textAboveArrow"
+      onclick="newWindow('about.html')"
+    >
+      About
+    </p>
+    <div class="arrowDownContainer" onclick="newWindow('about.html')">
+      <img src="../images/angle-arrow-down.svg" />
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="containerContact noDesktop">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              <h2>Order Now</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class=" formCore col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3"
+            >
+              <form
+                id="contact-form"
+                class="form"
+                method="post"
+                action=""
+                role="form"
+              >
+                <div class="form-group">
+                  <label class="form-label" for="email">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    tabindex="2"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea
+                    rows="5"
+                    cols="50"
+                    name="message"
+                    class="form-control"
+                    id="message"
+                    placeholder="Message..."
+                    tabindex="4"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <a href="#" id="sendEmail" class="btn btn-start-order"
+                    >Send Message</a
+                  >
+                  <div><p id="sentEmail"></p></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
     <script src="../js/slider.jquery.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/contact-modal.js"></script>
   </body>
 </html>

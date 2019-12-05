@@ -19,7 +19,6 @@
 }
 
 #about-content {
-  margin-top: 30vh;
   display: grid;
   grid-row-gap: 100px;
   grid-template-columns: 50vw auto;
@@ -46,7 +45,7 @@
 }
 
 .grid-item .lowerTekst {
-  margin-top: -11%;
+  margin-top: -5%;
 }
 
 .inTekstList {
@@ -87,6 +86,9 @@
   text-align: center;
   max-width: 60vw;
   margin: auto;
+}
+.sectionTitle.indexTitle {
+  margin-top: 0;
 }
 
 .grid-item .sectionTitle {
@@ -171,7 +173,6 @@
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
   #about-content {
-    margin-top: 45vh;
   }
 
   #about-bg {
@@ -207,6 +208,10 @@
     margin-bottom: 12vh;
   }
 
+  .sectionTitle.indexTitle {
+    margin-bottom: 0;
+  }
+
   .sectionTitle.centred {
     margin-bottom: 12vh;
   }
@@ -228,6 +233,5 @@
     width: 100vw;
     margin: 0;
     padding: 0;
-    padding-top: 10vh;
   }
 }

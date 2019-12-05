@@ -9,9 +9,13 @@
       content="Chateau Grona Winery, Ukrainian Wines with Class"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <link href="../css/normalize.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/contact-modal.css" rel="stylesheet" />
     <link href="../css/about.css" rel="stylesheet" />
     <link href="../css/china-label.css" rel="stylesheet" />
 
@@ -64,18 +68,18 @@
           <img id="menu-logo" src="../images/logo_black.png" />
         </div>
         <ul class="nav__list">
-              <li>
-            <a id="PLChinaButton" class="nav__list-item" href="china-label.html"
+          <li>
+            <a id="PLChinaButton" class="nav__list-item" href="index.html"
               >PRIVATE LABEL IN CHINA</a
             >
           </li>
-<li>
+          <li>
             <a id="aboutButton" class="nav__list-item" href="label.html"
               >CREATE CUSTOM WINES</a
             >
           </li>
 
-         <li>
+          <li>
             <a id="aboutButton" class="nav__list-item" href="order.html"
               >ORDER PROCESS</a
             >
@@ -83,7 +87,7 @@
 
           <li>
             <a id="museumButton" class="nav__list-item" href="wine.html"
-              >WINE MAKING</a
+              >WINEMAKING</a
             >
           </li>
 
@@ -102,15 +106,29 @@
       </div>
     </nav>
 
+    <div
+      class="arrowDownContainer arrowUpContainer upside-down"
+      onclick="newWindow('.html')"
+    >
+      <img src="../images/angle-arrow-down.svg" />
+    </div>
+
+    <p
+      class="centeredText textAboveArrow textBelowArrow "
+      onclick="newWindow('.html')"
+    >
+      Back to
+    </p>
+
     <div id="about-content">
       <div class="grid-item about-one">
         <p class="sectionTitle">Private Label in China</p>
 
         <p class="tekst lowerTekst">
-          Why are Private Label wines so popular in China?<br /><br />
+          Why are Private Label Wines so popular in China?<br /><br />
           A consumer’s opportunity to buy a truly unique wine under original
           label is a fundamental driver of the Chinese wine market.<br /><br />
-          This task is being fulfilled by (Private label wines), allowing to
+          This task is being fulfilled by (Private label Wines), allowing to
           introduce a “one in a million wine” that no one else has. Today each
           big store, retailer or online store has its own private label. If such
           wines have premium design then the business-model will be more
@@ -210,8 +228,69 @@
       </div>
     </div>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="containerContact noDesktop">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              <h2>Order Now</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class=" formCore col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3"
+            >
+              <form
+                id="contact-form"
+                class="form"
+                method="post"
+                action=""
+                role="form"
+              >
+                <div class="form-group">
+                  <label class="form-label" for="email">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    tabindex="2"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea
+                    rows="5"
+                    cols="50"
+                    name="message"
+                    class="form-control"
+                    id="message"
+                    placeholder="Message..."
+                    tabindex="4"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <a href="#" id="sendEmail" class="btn btn-start-order"
+                    >Send Message</a
+                  >
+                  <div><p id="sentEmail"></p></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/china-label.js"></script>
+    <script src="../js/contact-modal.js"></script>
   </body>
 </html>

@@ -9,19 +9,21 @@
       content="Chateau Grona Winery, Ukrainian Wines with Class"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link href="../css/normalize.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/contact-modal.css" rel="stylesheet" />
     <link href="../css/label.css" rel="stylesheet" />
     <link href="../css/about.css" rel="stylesheet" />
     <link href="../css/sliderstyle.css" rel="stylesheet" />
+    <link
+      href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css"
+      rel="stylesheet"
+    />
 
     <link
       rel="apple-touch-icon"
@@ -73,7 +75,7 @@
         </div>
         <ul class="nav__list">
           <li>
-            <a id="PLChinaButton" class="nav__list-item" href="china-label.html"
+            <a id="PLChinaButton" class="nav__list-item" href="index.html"
               >PRIVATE LABEL IN CHINA</a
             >
           </li>
@@ -91,7 +93,7 @@
 
           <li>
             <a id="museumButton" class="nav__list-item" href="wine.html"
-              >WINE MAKING</a
+              >WINEMAKING</a
             >
           </li>
 
@@ -111,11 +113,25 @@
     </nav>
     <!-- <img id="headImage" src="../images/label/label-head.jpg" /> -->
 
+    <div
+      class="arrowDownContainer arrowUpContainer upside-down"
+      onclick="newWindow('label.html')"
+    >
+      <img src="../images/angle-arrow-down.svg" />
+    </div>
+
+    <p
+      class="centeredText textAboveArrow textBelowArrow "
+      onclick="newWindow('label.html')"
+    >
+      Back to Create Your own Wine
+    </p>
+
     <div class="about-two label-section">
       <h1 class="mainTextHeader">Order Process</h1>
 
       <p id="secondP">
-        You can easily order private label wines from us by following our
+        You can easily order Private Label Wines from us by following our
         10-step scheme for Private Label.
       </p>
 
@@ -125,130 +141,74 @@
     <div class="mainPageDesc label-section about-three">
       <p class="sectionTitle subtitle" style="margin-top: 0;">Examples</p>
 
-      <!-- <div class="container">
-        <div class="row">
-          <a
-            href="../images/label/pl1.jpg"
-            data-toggle="lightbox"
-            data-gallery="gallery"
-            class="col-md-4"
-          >
-            <img src="../images/label/pl1.jpg" class="img-fluid rounded" />
-          </a>
-          <a
-            href="../images/label/pl2.jpg"
-            data-toggle="lightbox"
-            data-gallery="gallery"
-            class="col-md-4"
-          >
-            <img src="../images/label/pl2.jpg" class="img-fluid rounded" />
-          </a>
-          <a
-            href="../images/label/pl3.jpg"
-            data-toggle="lightbox"
-            data-gallery="gallery"
-            class="col-md-4"
-          >
-            <img src="../images/label/pl3.jpg" class="img-fluid rounded" />
-          </a>
-        </div>
-        <div class="row">
-          <a
-            href="../images/label/pl4.jpg"
-            data-toggle="lightbox"
-            data-gallery="gallery"
-            class="col-md-4"
-          >
-            <img src="../images/label/pl4.jpg" class="img-fluid rounded" />
-          </a>
-          <a
-            href="../images/label/pl5.jpg"
-            data-toggle="lightbox"
-            data-gallery="gallery"
-            class="col-md-4"
-          >
-            <img src="../images/label/pl5.jpg" class="img-fluid rounded" />
-          </a>
-          <a
-            href="../images/label/pl6.jpg"
-            data-toggle="lightbox"
-            data-gallery="gallery"
-            class="col-md-4"
-          >
-            <img src="../images/label/pl6.jpg" class="img-fluid rounded" />
-          </a>
-        </div>
-        <div class="row">
-          <a
-            href="../images/label/pl7.jpg"
-            data-toggle="lightbox"
-            data-gallery="gallery"
-            class="col-md-4"
-          >
-            <img src="../images/label/pl7.jpg" class="img-fluid rounded" />
-          </a>
-          <a
-            href="../images/label/pl8.jpg"
-            data-toggle="lightbox"
-            data-gallery="gallery"
-            class="col-md-4"
-          >
-            <img src="../images/label/pl8.jpg" class="img-fluid rounded" />
-          </a>
-          <a
-            href="../images/label/pl9.jpg"
-            data-toggle="lightbox"
-            data-gallery="gallery"
-            class="col-md-4"
-          >
-            <img src="../images/label/pl9.jpg" class="img-fluid rounded" />
-          </a>
-        </div>
-        <div class="row">
-          <a
-            href="../images/label/pl10.jpg"
-            data-toggle="lightbox"
-            data-gallery="gallery"
-            class="col-md-4"
-          >
-            <img src="../images/label/pl10.jpg" class="img-fluid rounded" />
-          </a>
-        </div>
-      </div> -->
-
       <div id="slider-container" style="height: auto; margin-top: 0;">
+        <!-- <div id="preview-bg"><span class="close-preview">&times;</span></div> -->
         <section class="slider order-slider">
-          <div class="slider-div backPic">
+          <div class="slider-div backPic" data-src="../images/label/pl1.jpg">
             <div>
               <img src="../images/label/pl1.jpg" />
             </div>
           </div>
 
-          <div class="slider-div left">
+          <div class="slider-div left" data-src="../images/label/pl2.jpg">
             <div>
               <img src="../images/label/pl2.jpg" />
             </div>
           </div>
 
-          <div class="slider-div center">
+          <div class="slider-div center" data-src="../images/label/pl3.jpg">
             <div>
               <img src="../images/label/pl3.jpg" />
             </div>
           </div>
 
-          <div class="slider-div right">
+          <div class="slider-div right" data-src="../images/label/pl4.jpg">
             <div>
               <img src="../images/label/pl4.jpg" />
+            </div>
+          </div>
+
+          <div class="slider-div backPic" data-src="../images/label/pl5.jpg">
+            <div>
+              <img src="../images/label/pl5.jpg" />
+            </div>
+          </div>
+
+          <div class="slider-div backPic" data-src="../images/label/pl6.jpg">
+            <div>
+              <img src="../images/label/pl6.jpg" />
+            </div>
+          </div>
+
+          <div class="slider-div backPic" data-src="../images/label/pl7.jpg">
+            <div>
+              <img src="../images/label/pl7.jpg" />
+            </div>
+          </div>
+
+          <div class="slider-div backPic" data-src="../images/label/pl8.jpg">
+            <div>
+              <img src="../images/label/pl8.jpg" />
+            </div>
+          </div>
+          <div class="slider-div backPic" data-src="../images/label/pl9.jpg">
+            <div>
+              <img src="../images/label/pl9.jpg" />
+            </div>
+          </div>
+          <div class="slider-div backPic" data-src="../images/label/pl10.jpg">
+            <div>
+              <img src="../images/label/pl10.jpg" />
             </div>
           </div>
         </section>
       </div>
     </div>
 
-    <p class="centeredText textAboveArrow" id="cWineMaking">
+    <p class="centeredText mt5 textAboveArrow" onclick="newWindow('wine.html')">
       Winemaking
     </p>
-    <div id="arrowDownContainer" class="noMobile">
+    <div class="arrowDownContainer" onclick="newWindow('wine.html')">
       <img src="../images/angle-arrow-down.svg" />
     </div>
 
@@ -264,11 +224,77 @@
         </div>
       </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="containerContact noDesktop">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              <h2>Order Now</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class=" formCore col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3"
+            >
+              <form
+                id="contact-form"
+                class="form"
+                method="post"
+                action=""
+                role="form"
+              >
+                <div class="form-group">
+                  <label class="form-label" for="email">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    tabindex="2"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea
+                    rows="5"
+                    cols="50"
+                    name="message"
+                    class="form-control"
+                    id="message"
+                    placeholder="Message..."
+                    tabindex="4"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <a href="#" id="sendEmail" class="btn btn-start-order"
+                    >Send Message</a
+                  >
+                  <div><p id="sentEmail"></p></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
     <script src="../js/slider.jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/label.js"></script>
+    <script src="../js/contact-modal.js"></script>
   </body>
 </html>

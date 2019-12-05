@@ -9,9 +9,13 @@
       content="Chateau Grona Winery, Ukrainian Wines with Class"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <link href="../css/normalize.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/contact-modal.css" rel="stylesheet" />
     <link href="../css/about.css" rel="stylesheet" />
     <link href="../css/sliderstyle.css" rel="stylesheet" />
 
@@ -65,7 +69,7 @@
         </div>
         <ul class="nav__list">
           <li>
-            <a id="PLChinaButton" class="nav__list-item" href="china-label.html"
+            <a id="PLChinaButton" class="nav__list-item" href="index.html"
               >PRIVATE LABEL IN CHINA</a
             >
           </li>
@@ -83,7 +87,7 @@
 
           <li>
             <a id="museumButton" class="nav__list-item" href="wine.html"
-              >WINE MAKING</a
+              >WINEMAKING</a
             >
           </li>
 
@@ -101,16 +105,31 @@
         </ul>
       </div>
     </nav>
-    <!-- <div id="about-bg"><p id="aboutTitle">About Us</p></div> -->
+
+    <div
+      class="arrowDownContainer arrowUpContainer upside-down"
+      onclick="newWindow('wine.html')"
+    >
+      <img src="../images/angle-arrow-down.svg" />
+    </div>
+
+    <p
+      class="centeredText textAboveArrow textBelowArrow "
+      onclick="newWindow('wine.html')"
+    >
+      Back to Winemaking
+    </p>
+
+    <p class="sectionTitle centred" style="margin-bottom: 5vh;">
+      About The Company
+    </p>
 
     <div id="about-content">
       <div class="grid-item double">
-        <p class="sectionTitle centred">About The Company</p>
-
-        <p class="tekst lowerTekst">
-          Chateau Grona Group is one of the 10th largest wine producers in
-          Ukraine. Our specialization is creating high-quality PRIVATE LABEL
-          wines for China market.<br /><br />
+        <p class="tekst lowerTekst" style="padding-top:0">
+          Chateau Grona Group is one of ten largest wine producers in Ukraine.
+          Our specialization is creating high-quality PRIVATE LABEL Wines for
+          Chinese market.<br /><br />
           Our vineyards are located on the "grape latitude" – between 46 and 47
           degrees – the same as the famous French wine regions of Bordeaux and
           Burgundy. This allows us to get abundant harvests of high quality.<br /><br />
@@ -128,7 +147,7 @@
           preload="none"
           poster="../images/poster.jpg"
         >
-          <source src="../videos/video.webm" type="video/mp4" />
+          <source src="../videos/video.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
       </div>
@@ -136,10 +155,7 @@
 
     <div class="about-content">
       <div class="grid-item about-two double">
-        <p
-          class="sectionTitle subtitle centred historyTitle"
-          style="margin-top: 10vh; "
-        >
+        <p class="sectionTitle subtitle centred historyTitle">
           History
         </p>
 
@@ -206,16 +222,80 @@
       </div>
     </div>
 
-    <p class="centeredText textAboveArrow" id="cContact">
+    <p
+      class="centeredText mt5 textAboveArrow"
+      onclick="newWindow('contact.html')"
+    >
       Contact
     </p>
-    <div id="arrowDownContainer" class="noMobile">
+    <div class="arrowDownContainer" onclick="newWindow('contact.html')">
       <img src="../images/angle-arrow-down.svg" />
     </div>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="containerContact noDesktop">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              <h2>Order Now</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class=" formCore col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3"
+            >
+              <form
+                id="contact-form"
+                class="form"
+                method="post"
+                action=""
+                role="form"
+              >
+                <div class="form-group">
+                  <label class="form-label" for="email">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    tabindex="2"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea
+                    rows="5"
+                    cols="50"
+                    name="message"
+                    class="form-control"
+                    id="message"
+                    placeholder="Message..."
+                    tabindex="4"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <a href="#" id="sendEmail" class="btn btn-start-order"
+                    >Send Message</a
+                  >
+                  <div><p id="sentEmail"></p></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="../js/slider.jquery.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/about.js"></script>
+    <script src="../js/contact-modal.js"></script>
   </body>
 </html>

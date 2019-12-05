@@ -66,31 +66,40 @@ function changeLang(lang) {
 
 //END LANGUAGE
 
-let cCustomWine = $('#cCustomWine');
-let cOrderProcess = $('#cOrderProcess');
-let cWineMaking = $('#cWineMaking');
-let cAbout = $('#cAbout');
-let cContact = $('#cContact');
+// let cCustomWine = $('.cCustomWine');
+// let cOrderProcess = $('.cOrderProcess');
+// let cWineMaking = $('.cWineMaking');
+// let cAbout = $('.cAbout');
+// let cContact = $('.cContact');
+// let cHome = $('.cHome');
 
-cCustomWine.on('click', () => {
-  window.location.href = 'label.html';
-});
+// cHome.on('click', () => {
+//   window.location.href = 'index.html';
+// });
 
-cOrderProcess.on('click', () => {
-  window.location.href = 'order.html';
-});
+// cCustomWine.on('click', () => {
+//   window.location.href = 'label.html';
+// });
 
-cWineMaking.on('click', () => {
-  window.location.href = 'wine.html';
-});
+// cOrderProcess.on('click', () => {
+//   window.location.href = 'order.html';
+// });
 
-cAbout.on('click', () => {
-  window.location.href = 'about.html';
-});
+// cWineMaking.on('click', () => {
+//   window.location.href = 'wine.html';
+// });
 
-cContact.on('click', () => {
-  window.location.href = 'contact.html';
-});
+// cAbout.on('click', () => {
+//   window.location.href = 'about.html';
+// });
+
+// cContact.on('click', () => {
+//   window.location.href = 'contact.html';
+// });
+
+function newWindow(loc) {
+  window.location.href = loc;
+}
 
 function openInNewTab(url) {
   var win = window.open(url, '_blank');

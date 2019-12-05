@@ -1,83 +1,8 @@
-/* .slider {
-  margin: 0 auto;
-  position: relative;
-  max-width: 1170px;
-  height: 100vh;
-  margin-top: 30px;
-}
-.slider > img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-
-  width: 33%;
-  height: auto;
-  transition: transform 1.5s;
-  transform: translate(-50%, -50%) scale(1);
-
-  z-index: 0;
-}
-.slider > img.left,
-.slider > img.center,
-.slider > img.right {
-  display: inline-block;
-  opacity: 1;
-  transition: 1s;
-}
-
-.slider > .backPic {
-  opacity: 0;
-  transition: 1s;
-}
-
-.slider > img.left {
-  transform: translate(-118.25%, -50%);
-  z-index: 1;
-  opacity: 0.5;
-}
-.slider > img.center {
-  z-index: 2;
-  transform: translate(-50%, -50%) scale(1.1);
-  transition: transform 2s, opacity 1s;
-}
-.slider > img.right {
-  transform: translate(18.25%, -50%);
-  z-index: 1;
-  opacity: 0.5;
-}
-.slider > .navContainer {
-  width: 49%;
-  height: 100%;
-  position: relative;
-  display: inline-block;
-  z-index: 5;
-}
-.slider > .navContainer > .leftClass,
-.slider > .navContainer > .rightClass {
-  height: 100%;
-  width: 28px;
-  background: url(../images/slider_arrow.png) no-repeat center;
-  background-position-x: 0;
-  position: absolute;
-  opacity: 1;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.slider > .navContainer > .rightClass {
-  right: 0;
-  background-position-x: -30px;
-}
-.slider > .navContainer > .leftClass {
-  left: 0;
-} */
-
 .slider {
   margin: 0 auto;
   position: relative;
-  max-width: 1170px;
-  max-height: 700px;
+  max-width: 1100px;
+  max-height: 500px;
   margin-top: 30px;
 }
 .slider-div {
@@ -85,8 +10,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 33%;
-  height: 33%;
+  width: 36%;
+  height: auto;
   transition: transform 0.5s;
   transform: translate(-50%, -50%) scale(1);
   z-index: 0;
@@ -143,6 +68,7 @@
 .slider > .backPic {
   opacity: 0;
   transition: 1s;
+  box-shadow: none;
 }
 
 .slider > .navContainer > .leftClass,
@@ -162,7 +88,7 @@
 }
 
 .slider > .rightNavContainer {
-  margin-left: 19%;
+  margin-left: 21%;
 }
 .slider > .navContainer > .rightClass {
   right: 0;
@@ -175,13 +101,34 @@
   right: 0;
 }
 
+/* gallery preview for slider below */
+
+#preview-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  transition: 500ms;
+  z-index: 20;
+  display: none;
+}
+
+.close-preview {
+  position: fixed;
+  top: 5vh;
+  right: 5vh;
+  color: white;
+  font-size: 4vw;
+  z-index: 100;
+}
+
+/* end of preview */
+
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
   .slider-title {
     bottom: -50%;
-  }
-
-  .slider {
-    margin-top: -10vh;
   }
 }

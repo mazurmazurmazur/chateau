@@ -9,13 +9,16 @@
       content="Chateau Grona Winery, Ukrainian Wines with Class"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <link href="../css/normalize.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/contact-modal.css" rel="stylesheet" />
     <link href="../css/home.css" rel="stylesheet" />
 
     <link href="../css/about.css" rel="stylesheet" />
-    <link href="../css/china-label.css" rel="stylesheet" />
 
     <link
       rel="apple-touch-icon"
@@ -67,7 +70,7 @@
         </div>
         <ul class="nav__list">
           <li>
-            <a id="PLChinaButton" class="nav__list-item" href="china-label.html"
+            <a id="PLChinaButton" class="nav__list-item" href="index.html"
               >PRIVATE LABEL IN CHINA</a
             >
           </li>
@@ -85,7 +88,7 @@
 
           <li>
             <a id="museumButton" class="nav__list-item" href="wine.html"
-              >WINE MAKING</a
+              >WINEMAKING</a
             >
           </li>
 
@@ -104,13 +107,23 @@
       </div>
     </nav>
 
-
+    <p class="sectionTitle indexTitle">
+      Private Label in China
+    </p>
+    <div class="grid-item double">
+      <p class="tekst indexTekst">
+        Private Label Wines allows to introduce a “one in a million wine” that
+        no one else has. Today each big store, retailer or online store has its
+        own private label. If such wines have premium design then the
+        business-model will be more successful.
+        <br /><br />
+        Chinese consumers prefer foreign wines, especially if those are created
+        for special occasions or as gifts. As of today foreign import makes up
+        70-80% of Chinese wine market.
+      </p>
+    </div>
 
     <div id="about-content">
-      <div class="grid-item double">
-        <p class="sectionTitle centred">Private Label in China</p>
-        <p class="tekst lowerTekst centeredText"></p>
-      </div>
       <div class="grid-item double">
         <p class="sectionTitle subtitle centred">
           Bulk sales of Eastern European wines in China
@@ -119,13 +132,13 @@
       </div>
       <div class="grid-item double">
         <p class="sectionTitle subtitle centred">
-          Why are private label wines so popular in China?
+          Why are Private Label Wines so popular in China?
         </p>
         <img src="../images/infographics/popularity.png" alt="" />
       </div>
       <div class="grid-item double">
         <p class="sectionTitle subtitle centred">
-          Who buys private label wines in China?
+          Who buys Private Label Wines in China?
         </p>
         <img src="../images/infographics/whobuys.png" alt="" />
       </div>
@@ -136,10 +149,10 @@
       </div>
     </div>
 
-    <p class="centeredText textAboveArrow" id="cCustomWine">
-      Create Custom Wine
+    <p class="centeredText textAboveArrow" onclick="newWindow('label.html')">
+      Create Your Own Wine
     </p>
-    <div id="arrowDownContainer" class="">
+    <div class="arrowDownContainer" onclick="newWindow('label.html')">
       <img src="../images/angle-arrow-down.svg" />
     </div>
     <div class="dropdown">
@@ -156,25 +169,90 @@
         </div>
       </div>
     </div>
-<div id="age-verify">
-<div class="window">
-    <span class="title welcoming">Welcome to website of Chateau Grona Group - the largest Ukraininan Private label wines producer</span>
-  <span class="title">Are you over 18?</span>
-  <span class="subWelcoming">To visit our website, you must be of legal drinking age.</span>
-  <button class="yes" onclick="overAge()">Yes</button>
-  <button class="no" onclick="underAge()">No</button>
-  <div class="underBox">
-    <span class="title">Sorry!</span>
-    <span>You need to be at least 18 to visit our website.</span>
-    <button class="back" onclick="goBack()">Go Back</button>
-  </div>
-<span>
-</div>
-</div>
+    <div id="age-verify">
+      <div class="window">
+        <span class="title welcoming"
+          >Welcome to website of Chateau Grona Group - the largest Ukraininan
+          Private Label Wines producer</span
+        >
+        <span class="title">Are you over 18?</span>
+        <span class="subWelcoming"
+          >To visit our website, you must be of legal drinking age.</span
+        >
+        <button class="yes" onclick="overAge()">Yes</button>
+        <button class="no" onclick="underAge()">No</button>
+        <div class="underBox">
+          <span class="title">Sorry!</span>
+          <span>You need to be at least 18 to visit our website.</span>
+          <button class="back" onclick="goBack()">Go Back</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/china-label.js"></script>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="containerContact noDesktop">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              <h2>Order Now</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class=" formCore col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3"
+            >
+              <form
+                id="contact-form"
+                class="form"
+                method="post"
+                action=""
+                role="form"
+              >
+                <div class="form-group">
+                  <label class="form-label" for="email">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    tabindex="2"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea
+                    rows="5"
+                    cols="50"
+                    name="message"
+                    class="form-control"
+                    id="message"
+                    placeholder="Message..."
+                    tabindex="4"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <a href="#" id="sendEmail" class="btn btn-start-order"
+                    >Send Message</a
+                  >
+                  <div><p id="sentEmail"></p></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/home.js"></script>
-
-    <script src="../js/china-label.js"></script>
+    <script src="../js/contact-modal.js"></script>
   </body>
 </html>

@@ -127,3 +127,11 @@
     $('.slider').MWslider();
   });
 })(jQuery, document, window);
+
+// LAUNCH LIGHTGALLERY
+
+lightGallery(document.querySelector('.slider'), {
+  selector: '.slider-div',
+  download: false
+});
+//END LIGHTGALLERY

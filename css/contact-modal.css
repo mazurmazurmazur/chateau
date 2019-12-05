@@ -1,0 +1,151 @@
+/* GENERAL CONTACT FORM */
+
+.containerContact {
+  color: rgb(211, 179, 91);
+  margin-top: 30vh;
+  width: 100%;
+  margin: auto;
+}
+
+.modal-content > .containerContact {
+  display: block;
+}
+
+.containerContact h2 {
+  color: var(--main-bg-color);
+}
+
+.formCore {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-label {
+  font-size: 12px;
+  color: black;
+  margin: 0;
+  display: block;
+  opacity: 1;
+  -webkit-transition: 0.333s ease top, 0.333s ease opacity;
+  transition: 0.333s ease top, 0.333s ease opacity;
+}
+.form-control {
+  border-radius: 5px;
+  border: rgb(185, 168, 168) 1px solid;
+  box-shadow: none;
+  background-color: var(--contact-form-color);
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #69210f;
+}
+.js-hide-label {
+  opacity: 0;
+}
+.js-unhighlight-label {
+  color: rgb(211, 179, 91);
+}
+.btn-start-order {
+  background: 0 0 #ffffff;
+  border: 1px solid #9c1313;
+  border-radius: 3px;
+  color: #a52820;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: inherit;
+  display: block;
+  margin: auto;
+  margin-bottom: 10%;
+
+  padding: 10px 50px;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+}
+
+.form-control::placeholder {
+  color: rgb(172, 151, 37);
+}
+.btn-start-order:hover,
+.btn-start-order:active,
+.btn-start-order:focus {
+  border-color: #cfa73a;
+  color: #f3bc46;
+}
+
+/* END OF GENERAL CONTACT FORM */
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 20vh;
+  width: 20vw; /* Full width */
+  height: 50vw; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  z-index: 18;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: var(--contact-form-color);
+  position: relative;
+  padding: 0;
+  border: 1px solid #888;
+  width: 20vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close-modal {
+  width: 10%;
+  color: rgb(235, 210, 210);
+  float: right;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+
+  line-height: 30px;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* END OF MODAL */

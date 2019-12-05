@@ -2,9 +2,11 @@
   margin-top: 0;
 }
 
-.slider.wine-slider {
-  margin-top: -20vh;
-  margin-bottom: -15vh;
+/* .slider-div {
+  height: 46.5%;
+} */
+body {
+  margin-top: 25vh;
 }
 
 /* TABLET AND MOBILE SPECIFICALLY */
@@ -13,10 +15,11 @@
     margin-top: 10vh;
   }
   .slider.wine-slider {
-    margin-bottom: 0vh;
+    margin-top: -18vh;
+    margin-bottom: 20vh;
   }
 
   #about-content.wine-content {
-    margin-top: 30vh;
+    /* margin-top: 30vh; */
   }
 }
