@@ -102,4 +102,7 @@ public
 .tern-port
 
 #videos
-./videos/
+../videos/
+
+#prettier
+.prettierrc

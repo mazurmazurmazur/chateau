@@ -36,7 +36,6 @@ var app = (function() {
       }, 800);
     } else {
       menu.style.backgroundColor = 'transparent';
-      console.log('opened menu');
       nav.style.display = 'block';
       setTimeout(function() {
         element.classList.add(stringClass);
@@ -66,37 +65,6 @@ function changeLang(lang) {
 
 //END LANGUAGE
 
-// let cCustomWine = $('.cCustomWine');
-// let cOrderProcess = $('.cOrderProcess');
-// let cWineMaking = $('.cWineMaking');
-// let cAbout = $('.cAbout');
-// let cContact = $('.cContact');
-// let cHome = $('.cHome');
-
-// cHome.on('click', () => {
-//   window.location.href = 'index.html';
-// });
-
-// cCustomWine.on('click', () => {
-//   window.location.href = 'label.html';
-// });
-
-// cOrderProcess.on('click', () => {
-//   window.location.href = 'order.html';
-// });
-
-// cWineMaking.on('click', () => {
-//   window.location.href = 'wine.html';
-// });
-
-// cAbout.on('click', () => {
-//   window.location.href = 'about.html';
-// });
-
-// cContact.on('click', () => {
-//   window.location.href = 'contact.html';
-// });
-
 function newWindow(loc) {
   window.location.href = loc;
 }
@@ -105,3 +73,46 @@ function openInNewTab(url) {
   var win = window.open(url, '_blank');
   win.focus();
 }
+
+//AGE CONSENT BELOW
+
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+  var expires = 'expires=' + d.toUTCString();
+  document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+}
+
+function getCookie(cname) {
+  var name = cname + '=';
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return '';
+}
+
+function checkIfAgeCookie() {
+  if (getCookie('over18') == 'over') {
+    $('#age-verify').addClass('hidden');
+  }
+}
+
+overAge = function() {
+  $('#age-verify').addClass('hidden');
+  setCookie('over18', 'over', 7);
+};
+
+underAge = function() {
+  $('#age-verify').addClass('under');
+};
+
+checkIfAgeCookie();
+
+//END OF AGE CONSENT

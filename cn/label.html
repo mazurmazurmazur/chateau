@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>Private Label in China - Chateau Grona</title>
+    <title>Private Label- Chateau Grona</title>
     <meta name="author" content="Krzysztof Mazur" />
     <meta
       name="description"
       content="Chateau Grona Winery, Ukrainian Wines with Class"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,8 +17,7 @@
     <link href="../css/normalize.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/contact-modal.css" rel="stylesheet" />
-    <link href="../css/home.css" rel="stylesheet" />
-
+    <link href="../css/label.css" rel="stylesheet" />
     <link href="../css/about.css" rel="stylesheet" />
 
     <link
@@ -55,7 +55,7 @@
       ><img id="main-logo-img" src="../images/logo_black.png"
     /></a>
     <div id="navBg">
-      <p id="private-label-menu-text">Producer of Private Label Wines</p>
+      <p id="private-label-menu-text">私人贴牌葡萄酒制造商</p>
     </div>
     <div class="menu-icon">
       <span class="menu-icon__line menu-icon__line-left"></span>
@@ -71,119 +71,95 @@
         <ul class="nav__list">
           <li>
             <a id="PLChinaButton" class="nav__list-item" href="index.html"
-              >PRIVATE LABEL IN CHINA</a
+              >关于贴牌酒</a
             >
           </li>
           <li>
             <a id="aboutButton" class="nav__list-item" href="label.html"
-              >CREATE CUSTOM WINES</a
+              >订制葡萄酒</a
             >
           </li>
 
           <li>
             <a id="aboutButton" class="nav__list-item" href="order.html"
-              >ORDER PROCESS</a
+              >下单流程</a
             >
           </li>
 
           <li>
             <a id="museumButton" class="nav__list-item" href="wine.html"
-              >WINEMAKING</a
+              >葡萄酒酿造</a
             >
           </li>
 
           <li>
             <a id="exhibitionsButton" class="nav__list-item" href="about.html"
-              >ABOUT US</a
+              >关于我们</a
             >
           </li>
 
           <li>
             <a id="contactButton" class="nav__list-item" href="contact.html"
-              >CONTACT</a
+              >联系我们</a
             >
           </li>
         </ul>
       </div>
     </nav>
+    <!-- <img id="headImage" src="../images/label/label-head.jpg" /> -->
 
-    <p class="sectionTitle indexTitle">
-      Private Label in China
-    </p>
-    <div class="grid-item double">
-      <p class="tekst indexTekst">
-        Private Label Wines allows to introduce a “one in a million wine” that
-        no one else has. Today each big store, retailer or online store has its
-        own private label. If such wines have premium design then the
-        business-model will be more successful.
-        <br /><br />
-        Chinese consumers prefer foreign wines, especially if those are created
-        for special occasions or as gifts. As of today foreign import makes up
-        70-80% of Chinese wine market.
-      </p>
-    </div>
-
-    <div id="about-content">
-      <div class="grid-item double">
-        <p class="sectionTitle subtitle centred">
-          Bulk sales of Eastern European wines in China
-        </p>
-        <img src="../images/infographics/bulk.png" alt="" />
-      </div>
-      <div class="grid-item double">
-        <p class="sectionTitle subtitle centred">
-          Why are Private Label Wines so popular in China?
-        </p>
-        <img src="../images/infographics/popularity.png" alt="" />
-      </div>
-      <div class="grid-item double">
-        <p class="sectionTitle subtitle centred">
-          Who buys Private Label Wines in China?
-        </p>
-        <img src="../images/infographics/whobuys.png" alt="" />
-      </div>
-
-      <div class="grid-item double">
-        <p class="sectionTitle subtitle centred">Why Ukrainian Wines?</p>
-        <img src="../images/infographics/whyukr.png" alt="" />
-      </div>
-    </div>
-
-    <p class="centeredText textAboveArrow" onclick="newWindow('label.html')">
-      Create Your Own Wine
-    </p>
-    <div class="arrowDownContainer" onclick="newWindow('label.html')">
+    <div
+      class="arrowDownContainer arrowUpContainer upside-down"
+      onclick="newWindow('index.html')"
+    >
       <img src="../images/angle-arrow-down.svg" />
     </div>
+
+    <p
+      class="centeredText textAboveArrow textBelowArrow "
+      onclick="newWindow('index.html')"
+    >
+      Back to Home
+    </p>
+
+    <div class="mainPageDesc label-section about-one">
+      <h1 class="mainTextHeader">Custom Wines</h1>
+      <p class="mainDescText">
+        At your request we can design a wine blend for your market and can make
+        sure that you obtain quality and consistency. We could provide various
+        options to customise wine for you:
+      </p>
+
+      <img id="customBottle" src="../images/label/privateLabelOptions.png" />
+
+      <p
+        onclick="openInNewTab('../docs/price-list.pdf')"
+        style=" width: 30vw; cursor: pointer; display: block; margin: auto; "
+        class="centeredText mt5  genericBorder"
+        id="price-list-btn"
+      >
+        Download Price List
+      </p>
+
+      <p
+        class="centeredText mt5 textAboveArrow"
+        onclick="newWindow('order.html')"
+      >
+        Order Process
+      </p>
+      <div class="arrowDownContainer" onclick="newWindow('order.html')">
+        <img src="../images/angle-arrow-down.svg" />
+      </div>
+    </div>
+
     <div class="dropdown">
-      <img id="globe" src="../images/globe.png" />
+      <img src="../images/globe.png" />
       <p id="langSelected">EN</p>
       <div class="dropdown-content-wrapper">
         <div class="dropdown-content">
           <div class="langChoice startL" id="ENG">ENG</div>
 
-          <div class="langChoice " id="MAN">
-            <a href="../cn/about.html">普通话</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="age-verify">
-      <div class="window">
-        <span class="title welcoming"
-          >Welcome to website of Chateau Grona Group - the largest Ukraininan
-          Private Label Wines producer</span
-        >
-        <span class="title">Are you over 18?</span>
-        <span class="subWelcoming"
-          >To visit our website, you must be of legal drinking age.</span
-        >
-        <button class="yes" onclick="overAge()">Yes</button>
-        <button class="no" onclick="underAge()">No</button>
-        <div class="underBox">
-          <span class="title">Sorry!</span>
-          <span>You need to be at least 18 to visit our website.</span>
-          <button class="back" onclick="goBack()">Go Back</button>
+          <div class="langChoice" id="MAN">普通话</div>
         </div>
       </div>
     </div>
@@ -248,9 +224,32 @@
         </div>
       </div>
     </div>
+
+    <div id="age-verify">
+      <div class="window">
+        <span class="title welcoming"
+          >欢迎来到格罗纳Chateau Grona葡萄酒庄
+-乌克兰最大的私人贴牌葡萄酒制造商</span
+        >
+        <span class="title">Are you over 18?</span>
+        <span class="subWelcoming"
+          >To visit our website, you must be of legal drinking age.</span
+        >
+        <button class="yes" onclick="overAge()">Yes</button>
+        <button class="no" onclick="underAge()">No</button>
+        <div class="underBox">
+          <span class="title">Sorry!</span>
+          <span>You need to be at least 18 to visit our website.</span>
+          <button class="back" onclick="goBack()">Go Back</button>
+        </div>
+      </div>
+    </div>
+
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="../js/script.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="../js/label.js"></script>
+    <script src="../js/about.js"></script>
     <script src="../js/contact-modal.js"></script>
   </body>
 </html>

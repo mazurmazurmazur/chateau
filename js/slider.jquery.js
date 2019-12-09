@@ -30,15 +30,6 @@
         parseInt(that.css('max-width')) / parseInt(that.css('max-height'));
 
     that.css('height', width / proportion);
-    console.log(width, proportion);
-  };
-
-  // Paralax Effect
-
-  $.fn.MWslider.mouseFollow = function(e, elem) {
-    var width = $(window).innerWidth();
-    height = this.height();
-    //console.log(width,height);
   };
 
   // Dodawanie nawigacji
@@ -119,7 +110,6 @@
     that.elements.eq(pos[0]).addClass('left');
 
     for (let i = 3; i < pos.length; i++) {
-      console.log(pos.length);
       that.elements.eq(pos[i]).addClass('backPic');
     }
   };

@@ -12,10 +12,6 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link href="../css/normalize.css" rel="stylesheet" />
@@ -23,7 +19,6 @@
     <link href="../css/contact-modal.css" rel="stylesheet" />
     <link href="../css/label.css" rel="stylesheet" />
     <link href="../css/about.css" rel="stylesheet" />
-    <link href="../css/sliderstyle.css" rel="stylesheet" />
 
     <link
       rel="apple-touch-icon"
@@ -135,20 +130,6 @@
         options to customise wine for you:
       </p>
 
-      <!-- <ul id="wineCustoms">
-        <li>Colour and quality</li>
-        <li>Alcohol and sugar content</li>
-        <li>Firmness</li>
-        <li>Capacity (3 types)</li>
-        <li>Customization of taste (wine blend)</li>
-        <li>Label (basic design, improved label)</li>
-        <li>Branded cork</li>
-        <li>Branded cap</li>
-        <li>Cork (agglomerate / natural)</li>
-        <li>Box (transport / freight)</li>
-
-        <li>Type of bottle (standard / VIP).</li>
-      </ul> -->
       <img id="customBottle" src="../images/label/privateLabelOptions.png" />
 
       <p
@@ -176,9 +157,8 @@
       <p id="langSelected">EN</p>
       <div class="dropdown-content-wrapper">
         <div class="dropdown-content">
-          <div class="langChoice" id="ENG">ENG</div>
+          <div class="langChoice startL" id="ENG">ENG</div>
 
-          <div class="langChoice" id="CAN">廣東話</div>
           <div class="langChoice" id="MAN">普通话</div>
         </div>
       </div>
@@ -245,8 +225,27 @@
       </div>
     </div>
 
+    <div id="age-verify">
+      <div class="window">
+        <span class="title welcoming"
+          >Welcome to website of Chateau Grona Group - the largest Ukraininan
+          Private Label Wines producer</span
+        >
+        <span class="title">Are you over 18?</span>
+        <span class="subWelcoming"
+          >To visit our website, you must be of legal drinking age.</span
+        >
+        <button class="yes" onclick="overAge()">Yes</button>
+        <button class="no" onclick="underAge()">No</button>
+        <div class="underBox">
+          <span class="title">Sorry!</span>
+          <span>You need to be at least 18 to visit our website.</span>
+          <button class="back" onclick="goBack()">Go Back</button>
+        </div>
+      </div>
+    </div>
+
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="../js/slider.jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/label.js"></script>

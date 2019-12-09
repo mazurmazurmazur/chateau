@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>Private Label in China - Chateau Grona</title>
+    <title>Contact - Chateau Grona</title>
     <meta name="author" content="Krzysztof Mazur" />
     <meta
       name="description"
       content="Chateau Grona Winery, Ukrainian Wines with Class"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"
+    />
+
     <link href="../css/normalize.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/contact-modal.css" rel="stylesheet" />
-    <link href="../css/home.css" rel="stylesheet" />
-
-    <link href="../css/about.css" rel="stylesheet" />
-
+    <link href="../css/contact.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -55,7 +70,7 @@
       ><img id="main-logo-img" src="../images/logo_black.png"
     /></a>
     <div id="navBg">
-      <p id="private-label-menu-text">Producer of Private Label Wines</p>
+      <p id="private-label-menu-text">私人贴牌葡萄酒制造商</p>
     </div>
     <div class="menu-icon">
       <span class="menu-icon__line menu-icon__line-left"></span>
@@ -71,119 +86,155 @@
         <ul class="nav__list">
           <li>
             <a id="PLChinaButton" class="nav__list-item" href="index.html"
-              >PRIVATE LABEL IN CHINA</a
+              >关于贴牌酒</a
             >
           </li>
           <li>
             <a id="aboutButton" class="nav__list-item" href="label.html"
-              >CREATE CUSTOM WINES</a
+              >订制葡萄酒</a
             >
           </li>
 
           <li>
             <a id="aboutButton" class="nav__list-item" href="order.html"
-              >ORDER PROCESS</a
+              >下单流程</a
             >
           </li>
 
           <li>
             <a id="museumButton" class="nav__list-item" href="wine.html"
-              >WINEMAKING</a
+              >葡萄酒酿造</a
             >
           </li>
 
           <li>
             <a id="exhibitionsButton" class="nav__list-item" href="about.html"
-              >ABOUT US</a
+              >关于我们</a
             >
           </li>
 
           <li>
             <a id="contactButton" class="nav__list-item" href="contact.html"
-              >CONTACT</a
+              >联系我们</a
             >
           </li>
         </ul>
       </div>
     </nav>
 
-    <p class="sectionTitle indexTitle">
-      Private Label in China
-    </p>
-    <div class="grid-item double">
-      <p class="tekst indexTekst">
-        Private Label Wines allows to introduce a “one in a million wine” that
-        no one else has. Today each big store, retailer or online store has its
-        own private label. If such wines have premium design then the
-        business-model will be more successful.
-        <br /><br />
-        Chinese consumers prefer foreign wines, especially if those are created
-        for special occasions or as gifts. As of today foreign import makes up
-        70-80% of Chinese wine market.
-      </p>
-    </div>
-
-    <div id="about-content">
-      <div class="grid-item double">
-        <p class="sectionTitle subtitle centred">
-          Bulk sales of Eastern European wines in China
-        </p>
-        <img src="../images/infographics/bulk.png" alt="" />
-      </div>
-      <div class="grid-item double">
-        <p class="sectionTitle subtitle centred">
-          Why are Private Label Wines so popular in China?
-        </p>
-        <img src="../images/infographics/popularity.png" alt="" />
-      </div>
-      <div class="grid-item double">
-        <p class="sectionTitle subtitle centred">
-          Who buys Private Label Wines in China?
-        </p>
-        <img src="../images/infographics/whobuys.png" alt="" />
-      </div>
-
-      <div class="grid-item double">
-        <p class="sectionTitle subtitle centred">Why Ukrainian Wines?</p>
-        <img src="../images/infographics/whyukr.png" alt="" />
-      </div>
-    </div>
-
-    <p class="centeredText textAboveArrow" onclick="newWindow('label.html')">
-      Create Your Own Wine
-    </p>
-    <div class="arrowDownContainer" onclick="newWindow('label.html')">
+    <div
+      class="arrowDownContainer arrowUpContainer upside-down"
+      onclick="newWindow('about.html')"
+    >
       <img src="../images/angle-arrow-down.svg" />
     </div>
+
+    <p
+      class="centeredText textAboveArrow textBelowArrow "
+      onclick="newWindow('about.html')"
+    >
+      Back to About
+    </p>
+
     <div class="dropdown">
-      <img id="globe" src="../images/globe.png" />
+      <img src="../images/globe.png" />
       <p id="langSelected">EN</p>
       <div class="dropdown-content-wrapper">
         <div class="dropdown-content">
           <div class="langChoice startL" id="ENG">ENG</div>
 
-          <div class="langChoice " id="MAN">
-            <a href="../cn/about.html">普通话</a>
-          </div>
+          <div class="langChoice" id="MAN">普通话</div>
         </div>
       </div>
     </div>
-    <div id="age-verify">
-      <div class="window">
-        <span class="title welcoming"
-          >Welcome to website of Chateau Grona Group - the largest Ukraininan
-          Private Label Wines producer</span
+
+    <h1 class="wechatTitle">Contact</h1>
+
+    <div class="grid-container">
+      <div class="\31 ">
+        <p class="boldText">Vlad Blumberg<br /></p>
+        <p>CEO (General Director)<br /></p>
+        <p class="emailAddressGrid">vlad@privatelabels.wine<br /></p>
+        <p>+38095 9331232</p>
+        <br /><br />
+        <img id="wechatImg" src="../images/qr.png" />
+      </div>
+      <div class="\32 ">
+        <p class="boldText">Ganna Tsatskina<br /></p>
+        <p>Head of Export Department<br /></p>
+        <p class="emailAddressGrid">export@privatelabels.wine</p>
+      </div>
+
+      <div class="\33 ">
+        <p class="boldText">Vladimir Eremenko <br /></p>
+        <p>Member of the Board <br /></p>
+        <p class="emailAddressGrid">eremenko@privatelabels.wine</p>
+      </div>
+    </div>
+
+    <h1 class="wechatTitle mapTitle">Where to find us?</h1>
+
+    <div id="mapContainer">
+      <p id="addressMap">
+        Chateau Grona Group<br />
+        Lambrovka village<br />
+        Odessa region<br />
+        68534 Ukraine<br />
+      </p>
+
+      <div id="leafletMap"></div>
+    </div>
+
+    <div class="containerContact noDesktop">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          <h2>Order Now</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class=" formCore col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3"
         >
-        <span class="title">Are you over 18?</span>
-        <span class="subWelcoming"
-          >To visit our website, you must be of legal drinking age.</span
-        >
-        <button class="yes" onclick="overAge()">Yes</button>
-        <button class="no" onclick="underAge()">No</button>
-        <div class="underBox">
-          <span class="title">Sorry!</span>
-          <span>You need to be at least 18 to visit our website.</span>
-          <button class="back" onclick="goBack()">Go Back</button>
+          <form
+            id="contact-form"
+            class="form"
+            method="post"
+            action=""
+            role="form"
+          >
+            <div class="form-group">
+              <label class="form-label" for="email">Your Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                tabindex="2"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                rows="5"
+                cols="50"
+                name="message"
+                class="form-control"
+                id="message"
+                placeholder="Message..."
+                tabindex="4"
+                required
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <a href="#" id="sendEmail" class="btn btn-start-order"
+                >Send Message</a
+              >
+              <div><p id="sentEmail"></p></div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -248,9 +299,31 @@
         </div>
       </div>
     </div>
+
+    <div id="age-verify">
+      <div class="window">
+        <span class="title welcoming"
+          >欢迎来到格罗纳Chateau Grona葡萄酒庄
+-乌克兰最大的私人贴牌葡萄酒制造商</span
+        >
+        <span class="title">Are you over 18?</span>
+        <span class="subWelcoming"
+          >To visit our website, you must be of legal drinking age.</span
+        >
+        <button class="yes" onclick="overAge()">Yes</button>
+        <button class="no" onclick="underAge()">No</button>
+        <div class="underBox">
+          <span class="title">Sorry!</span>
+          <span>You need to be at least 18 to visit our website.</span>
+          <button class="back" onclick="goBack()">Go Back</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="../js/script.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="../js/contact.js"></script>
     <script src="../js/contact-modal.js"></script>
   </body>
 </html>

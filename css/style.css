@@ -481,6 +481,15 @@ video {
   animation: loader-inner 2s infinite ease-in;
 }
 
+.mainDescText {
+  text-align: center;
+  justify-content: center;
+  max-width: 60vw;
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 2vh;
+}
+
 .slider {
   cursor: pointer;
 }
@@ -664,6 +673,11 @@ video {
   #main-logo img {
     width: 40vw;
     height: auto;
+  }
+
+  .mainDescText {
+    text-align: justify;
+    margin: auto;
   }
 
   .slider {
