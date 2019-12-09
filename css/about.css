@@ -103,7 +103,7 @@
 
 .sectionTitle.centred {
   text-align: center;
-  top: -10%;
+
   right: 0;
   margin: auto;
   padding-right: 0;
@@ -161,6 +161,7 @@
 }
 #historySVG {
   border: none;
+  margin-top: -10%;
 }
 
 .about-two .double {

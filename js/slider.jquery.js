@@ -16,9 +16,9 @@
 
     // Paralax efect
 
-    that.mousemove(function(e) {
-      $.fn.MWslider.mouseFollow.call(that, e, this.elements);
-    });
+    // that.mousemove(function(e) {
+    //   $.fn.MWslider.mouseFollow.call(that, e, this.elements);
+    // });
     return that;
   };
 
@@ -71,7 +71,7 @@
     }
   };
 
-  // Przesówanie slidera
+  // Przesuwanie slidera
 
   $.fn.MWslider.checkPosition = function(cent, len) {
     var left = cent - 1 < 0 ? len - 1 : cent - 1,

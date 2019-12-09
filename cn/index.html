@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="utf-8" />
-    <title>关于贴牌酒 - Chateau Grona</title>
+    <title>关于贴牌酒 - 格罗纳酒庄 </title>
     <meta name="author" content="Krzysztof Mazur" />
     <meta
       name="description"
@@ -52,7 +52,7 @@
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <a id="main-logo" href="index.html"
-      ><img id="main-logo-img" src="../images/logo_black.png"
+      ><img id="main-logo-img" src="../images/logoMobileCN.png"
     /></a>
     <div id="navBg">
       <p id="private-label-menu-text">私人贴牌葡萄酒制造商</p>
@@ -66,7 +66,7 @@
     <nav class="nav_">
       <div class="nav__content">
         <div class="nav__list-item" id="menu-logo-wrapper">
-          <img id="menu-logo" src="../images/logo_black.png" />
+          <img id="menu-logo" src="../images/logoMobileCN.png" />
         </div>
         <ul class="nav__list">
           <li>
@@ -123,24 +123,24 @@
         <p class="sectionTitle subtitle centred">
           东欧葡萄酒在中国的批量销售量
         </p>
-        <img src="../images/infographics/bulk.png" alt="" />
+        <img src="../images/infographics-cn/bulk.png" alt="" />
       </div>
       <div class="grid-item double">
         <p class="sectionTitle subtitle centred">
           为什么进口葡萄酒贴牌在中国受到欢迎？
         </p>
-        <img src="../images/infographics/popularity.png" alt="" />
+        <img src="../images/infographics-cn/popularity.png" alt="" />
       </div>
       <div class="grid-item double">
         <p class="sectionTitle subtitle centred">
           谁对贴牌葡萄酒感兴趣？
         </p>
-        <img src="../images/infographics/whobuys.png" alt="" />
+        <img src="../images/infographics-cn/whobuys.png" alt="" />
       </div>
 
       <div class="grid-item double">
         <p class="sectionTitle subtitle centred">为什么选择乌克兰葡萄酒？</p>
-        <img src="../images/infographics/whyukr.png" alt="" />
+        <img src="../images/infographics-cn/whyukr.png" alt="" />
       </div>
     </div>
 
@@ -152,13 +152,13 @@
     </div>
     <div class="dropdown">
       <img id="globe" src="../images/globe.png" />
-      <p id="langSelected">EN</p>
+      <p id="langSelected">普通话</p>
       <div class="dropdown-content-wrapper">
         <div class="dropdown-content">
-          <div class="langChoice startL" id="ENG">ENG</div>
+          <div class="langChoice" id="ENG"><a href="../en/index.html">ENG</a></div>
+          
 
-          <div class="langChoice " id="MAN">
-            <a href="../cn/about.html">普通话</a>
+          <div class="langChoice startL" id="MAN">
           </div>
         </div>
       </div>
@@ -169,16 +169,16 @@
           >欢迎来到格罗纳Chateau Grona葡萄酒庄
           -乌克兰最大的私人贴牌葡萄酒制造商</span
         >
-        <span class="title">Are you over 18?</span>
+        <span class="title">你满18岁了吗？</span>
         <span class="subWelcoming"
-          >To visit our website, you must be of legal drinking age.</span
+          >进入我们的网站，您必须达到法定饮酒年龄。</span
         >
-        <button class="yes" onclick="overAge()">Yes</button>
-        <button class="no" onclick="underAge()">No</button>
+        <button class="yes" onclick="overAge()">是</button>
+        <button class="no" onclick="underAge()">不是</button>
         <div class="underBox">
-          <span class="title">Sorry!</span>
-          <span>You need to be at least 18 to visit our website.</span>
-          <button class="back" onclick="goBack()">Go Back</button>
+          <span class="title">抱歉</span>
+          <span>本网站不开放给未满18岁者。</span>
+          <button class="back" onclick="goBack()">返回/button>
         </div>
       </div>
     </div>
@@ -191,12 +191,12 @@
         <div class="containerContact noDesktop">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-              <h2>Order Now</h2>
+              <h2>立即购买</h2>
             </div>
           </div>
           <div class="row">
             <div
-              class=" formCore col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3"
+              class=" formCore col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-3"
             >
               <form
                 id="contact-form"
@@ -206,13 +206,13 @@
                 role="form"
               >
                 <div class="form-group">
-                  <label class="form-label" for="email">Your Email</label>
+                  <label class="form-label" for="email">邮箱</label>
                   <input
                     type="email"
                     class="form-control"
                     id="email"
                     name="email"
-                    placeholder="Your Email"
+                    placeholder="邮箱"
                     tabindex="2"
                     required
                   />
@@ -226,14 +226,14 @@
                     name="message"
                     class="form-control"
                     id="message"
-                    placeholder="Message..."
+                    placeholder="请输入您要咨询的事项"
                     tabindex="4"
                     required
                   ></textarea>
                 </div>
                 <div class="text-center">
                   <a href="#" id="sendEmail" class="btn btn-start-order"
-                    >Send Message</a
+                    >提交</a
                   >
                   <div><p id="sentEmail"></p></div>
                 </div>
