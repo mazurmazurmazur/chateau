@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>联系我们 - 格罗纳酒庄 </title>
+    <title>Contact - Chateau Grona</title>
     <meta name="author" content="Krzysztof Mazur" />
     <meta
       name="description"
@@ -68,10 +67,10 @@
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <a id="main-logo" href="index.html"
-      ><img id="main-logo-img" src="../images/logoMobileCN.png"
+      ><img id="main-logo-img" src="../images/logo_black.png"
     /></a>
     <div id="navBg">
-      <p id="private-label-menu-text">私人贴牌葡萄酒制造商</p>
+      <p id="private-label-menu-text">Producer of Private Label Wines</p>
     </div>
     <div class="menu-icon">
       <span class="menu-icon__line menu-icon__line-left"></span>
@@ -82,41 +81,41 @@
     <nav class="nav_">
       <div class="nav__content">
         <div class="nav__list-item" id="menu-logo-wrapper">
-          <img id="menu-logo" src="../images/logoMobileCN.png" />
+          <img id="menu-logo" src="../images/logo_black.png" />
         </div>
         <ul class="nav__list">
           <li>
             <a id="PLChinaButton" class="nav__list-item" href="index.html"
-              >关于贴牌酒</a
+              >PRIVATE LABEL IN CHINA</a
             >
           </li>
           <li>
-            <a id="aboutButton" class="nav__list-item" href="label.html"
-              >订制葡萄酒</a
-            >
-          </li>
-
-          <li>
-            <a id="aboutButton" class="nav__list-item" href="order.html"
-              >下单流程</a
+            <a id="customWinesButton" class="nav__list-item" href="label.html"
+              >CREATE CUSTOM WINES</a
             >
           </li>
 
           <li>
-            <a id="museumButton" class="nav__list-item" href="wine.html"
-              >葡萄酒酿造</a
+            <a id="orderButton" class="nav__list-item" href="order.html"
+              >ORDER PROCESS</a
             >
           </li>
 
           <li>
-            <a id="exhibitionsButton" class="nav__list-item" href="about.html"
-              >关于我们</a
+            <a id="winemakingButton" class="nav__list-item" href="wine.html"
+              >WINEMAKING</a
+            >
+          </li>
+
+          <li>
+            <a id="aboutButton" class="nav__list-item" href="about.html"
+              >ABOUT US</a
             >
           </li>
 
           <li>
             <a id="contactButton" class="nav__list-item" href="contact.html"
-              >联系我们</a
+              >CONTACT</a
             >
           </li>
         </ul>
@@ -131,54 +130,39 @@
     </div>
 
     <p
+      id="buttonBack"
       class="centeredText textAboveArrow textBelowArrow "
       onclick="newWindow('about.html')"
     >
-      返回关于我们
+      Back to About
     </p>
 
     <div class="dropdown">
       <img src="../images/globe.png" />
-      <p id="langSelected">普通话</p>
+      <p id="langSelected">中文</p>
       <div class="dropdown-content-wrapper">
         <div class="dropdown-content">
-          <div class="langChoice" id="ENG"><a href="../en/contact.html">ENG</a></div>
-          
+          <div class="langChoice startL" id="ENG">ENG</div>
 
-          <div class="langChoice startL" id="MAN">普通话</div>
+          <div class="langChoice" id="MAN">
+            <a>中文</a>
+          </div>
+          <div class="langChoice" id="YUE">
+            <a>广东话 </a>
+          </div>
         </div>
       </div>
     </div>
 
-    <h1 class="wechatTitle">联系我们</h1>
+    <h1 id="topTitle" class="wechatTitle">Contact</h1>
 
-    <div class="grid-container">
-      <div class="\31 ">
-        <p class="boldText">弗拉德·布伦伯格<br /></p>
-        <p>总经理<br /></p>
-        <p class="emailAddressGrid">vlad@privatelabels.wine<br /></p>
-        <p>+38095 9331232</p>
-        <br /><br />
-        <img id="wechatImg" src="../images/qr.png" />
-      </div>
-      <div class="\32 ">
-        <p class="boldText">加纳·特萨兹基纳<br /></p>
-        <p>进出口部负责人<br /></p>
-        <p class="emailAddressGrid">export@privatelabels.wine</p>
-      </div>
+    <div id="contacts-container" class="grid-container"></div>
 
-      <div class="\33 ">
-        <p class="boldText">弗拉迪米尔·埃雷梅克 <br /></p>
-        <p>董事会成员 <br /></p>
-        <p class="emailAddressGrid">eremenko@privatelabels.wine</p>
-      </div>
-    </div>
-
-    <h1 class="wechatTitle mapTitle">我们的地址</h1>
+    <h1 id="addressTitle" class="wechatTitle mapTitle">Where to find us?</h1>
 
     <div id="mapContainer">
       <p id="addressMap">
-        地址：<br />
+        Chateau Grona Group<br />
         Lambrovka village<br />
         Odessa region<br />
         68534 Ukraine<br />
@@ -190,7 +174,7 @@
     <div class="containerContact noDesktop">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-          <h2>立即购买</h2>
+          <h2 id="orderTitle">Order Now</h2>
         </div>
       </div>
       <div class="row">
@@ -205,13 +189,13 @@
             role="form"
           >
             <div class="form-group">
-              <label class="form-label" for="email">邮箱</label>
+              <label class="form-label" for="email">Your Email</label>
               <input
                 type="email"
                 class="form-control"
                 id="email"
                 name="email"
-                placeholder="邮箱"
+                placeholder="Your Email"
                 tabindex="2"
                 required
               />
@@ -225,14 +209,14 @@
                 name="message"
                 class="form-control"
                 id="message"
-                placeholder="请输入您要咨询的事项"
+                placeholder="Message..."
                 tabindex="4"
                 required
               ></textarea>
             </div>
             <div class="text-center">
               <a href="#" id="sendEmail" class="btn btn-start-order"
-                >提交</a
+                >Send Message</a
               >
               <div><p id="sentEmail"></p></div>
             </div>
@@ -249,7 +233,7 @@
         <div class="containerContact noDesktop">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-              <h2>立即购买</h2>
+              <h2 id="orderTitle">Order Now</h2>
             </div>
           </div>
           <div class="row">
@@ -264,13 +248,13 @@
                 role="form"
               >
                 <div class="form-group">
-                  <label class="form-label" for="email">邮箱</label>
+                  <label class="form-label" for="email">Your Email</label>
                   <input
                     type="email"
                     class="form-control"
                     id="email"
                     name="email"
-                    placeholder="邮箱"
+                    placeholder="Your Email"
                     tabindex="2"
                     required
                   />
@@ -284,14 +268,14 @@
                     name="message"
                     class="form-control"
                     id="message"
-                    placeholder="请输入您要咨询的事项"
+                    placeholder="Message..."
                     tabindex="4"
                     required
                   ></textarea>
                 </div>
                 <div class="text-center">
                   <a href="#" id="sendEmail" class="btn btn-start-order"
-                    >提交</a
+                    >Send Message</a
                   >
                   <div><p id="sentEmail"></p></div>
                 </div>
@@ -304,20 +288,24 @@
 
     <div id="age-verify">
       <div class="window">
-        <span class="title welcoming"
-          >欢迎来到格罗纳Chateau Grona葡萄酒庄
-          -乌克兰最大的私人贴牌葡萄酒制造商</span
+        <span id="welcoming" class="title welcoming"
+          >Welcome to website of Chateau Grona Group - the largest Ukraininan
+          Private Label Wines producer</span
         >
-        <span class="title">你满18岁了吗？</span>
-        <span class="subWelcoming"
-          >进入我们的网站，您必须达到法定饮酒年龄。</span
+        <span id="question" class="title">Are you over 18?</span>
+        <span id="subWelcoming" class="subWelcoming"
+          >To visit our website, you must be of legal drinking age.</span
         >
-        <button class="yes" onclick="overAge()">是</button>
-        <button class="no" onclick="underAge()">不是</button>
-        <div class="underBox">
-          <span class="title">抱歉</span>
-          <span>本网站不开放给未满18岁者。</span>
-          <button class="back" onclick="goBack()">返回/button>
+        <button id="yesButton" class="yes" onclick="overAge()">Yes</button>
+        <button id="noButton" class="no" onclick="underAge()">No</button>
+        <div id="sorryBox" class="underBox">
+          <span id="sorry" class="title">Sorry!</span>
+          <span id="sorryInfo"
+            >You need to be at least 18 to visit our website.</span
+          >
+          <button id="backButtonConsent" class="back" onclick="goBack()">
+            Go Back
+          </button>
         </div>
       </div>
     </div>

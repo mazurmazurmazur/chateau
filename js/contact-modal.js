@@ -49,32 +49,39 @@ $(document).ready(function() {
       });
   }
 
-  let name = document.getElementById('name');
+  function loadJSON(callback) {
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType('application/json');
+    xobj.open('GET', '../hashing.json', true);
+    xobj.onreadystatechange = function() {
+      if (xobj.readyState == 4 && xobj.status == '200') {
+        callback(JSON.parse(xobj.responseText));
+      }
+    };
+    xobj.send(null);
+  }
+
   let emailAddress = document.getElementById('email');
-  let subject = document.getElementById('subject');
   let message = document.getElementById('message');
   let sentEmailAlert = document.getElementById('sentEmail');
+  let secure;
+
+  loadJSON(function(json) {
+    secure = json.collie;
+  });
 
   document.getElementById('sendEmail').addEventListener('click', function() {
-    if (
-      name.validity.valid &&
-      emailAddress.validity.valid &&
-      subject.validity.valid &&
-      message.validity.valid
-    ) {
+    if (emailAddress.validity.valid && message.validity.valid) {
       sentEmailAlert.style.color = 'black';
 
       Email.send({
         Host: 'smtp.gmail.com',
         Username: 'mailsimbio@gmail.com',
-        Password: ',S<~-g3r#aG]45ev',
-        To: 'kasia@siqiuli.com',
+        Password: secure,
+        To: 'grzaneczka@gmail.com',
         From: 'mailsimbio@gmail.com',
-        Subject: 'SIQIULI: ' + subject.value,
+        Subject: 'Chateau Grona Website Contact',
         Body:
-          'Interestants name: ' +
-          name.value +
-          '<br>' +
           'Message : <br>' +
           message.value +
           '<br>Answer to: ' +
@@ -83,9 +90,7 @@ $(document).ready(function() {
         .then(message => console.log(message))
         .then((sentEmailAlert.innerHTML = 'Message sent!'));
 
-      name.value = '';
       emailAddress.value = ''; ///clearing up all text fields in email form after sending email
-      subject.value = '';
       message.value = '';
     } else {
       sentEmailAlert.style.color = 'red';
@@ -104,7 +109,6 @@ function dragElement(elmnt) {
     pos3 = 0,
     pos4 = 0;
   if (document.getElementById(elmnt.id + 'header')) {
-    console.log('zrodlo bledu? : ' + elmnt.id);
     // if present, the header is where you move the DIV from:
     document.getElementById(elmnt.id + 'header').onmousedown = dragMouseDown;
   } else {

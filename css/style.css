@@ -374,6 +374,7 @@ body.nav-active .nav__list-item:nth-child(5) {
 .dropdown img {
   width: 2vw;
   height: auto;
+  background: white;
 }
 
 .dropdown-content-wrapper {
@@ -407,6 +408,7 @@ body.nav-active .nav__list-item:nth-child(5) {
   left: 50%;
   transform: translate(-50%, 0%);
   transition: 1s ease;
+  background: white;
 }
 
 .dropdown:hover .dropdown-content-wrapper {

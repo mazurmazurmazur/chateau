@@ -9,6 +9,10 @@ body {
   margin-top: 25vh;
 }
 
+#about-content {
+  margin-top: 20vh;
+}
+
 /* TABLET AND MOBILE SPECIFICALLY */
 @media screen and (max-width: 813px) {
   #cAbout {
